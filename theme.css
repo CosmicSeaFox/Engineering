@@ -1711,9 +1711,7 @@ body.engineering-kernel .status-bar {
 
   font-family: var(--eng-font-body);
 
-  scrollbar-color:
-    var(--eng-border)
-    transparent;
+
 }
 
 
@@ -2904,8 +2902,6 @@ body.engineering-kernel
   text-decoration:
     underline;
 
-  text-decoration-color:
-    var(--eng-primary);
 
   text-underline-offset:
     3px;
@@ -2984,8 +2980,6 @@ body.engineering-kernel
   color:
     var(--eng-text-muted);
 
-  text-decoration-color:
-    var(--eng-error);
 }
 
 
@@ -3422,8 +3416,6 @@ body.engineering-kernel
   text-decoration:
     line-through;
 
-  text-decoration-color:
-    var(--eng-border-strong);
 }
 
 
