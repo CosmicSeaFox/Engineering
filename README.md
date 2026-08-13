@@ -153,6 +153,8 @@ The Style Settings plugin is required to switch between the seven Engineering di
 
 The Engineering theme will apply the selected discipline.
 
+![Engineering Style Settings](screenshots/style-settings.png)
+
 > **Changing the discipline changes the overall Engineering environment, not just its colour.**
 
 Your notes, files, content, and vault structure remain unchanged.
