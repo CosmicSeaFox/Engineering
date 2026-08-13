@@ -1,0 +1,6239 @@
+/* =========================================================
+   ENGINEERING OBSIDIAN THEME
+   CORRECTED VERSION — PART 1 / 4
+
+   PART 1:
+   - Style Settings discipline engine
+   - Core variables
+   - Foundation world
+   - Circuit world
+   - Catalyst world
+   - Machina world
+   - Kinematics world
+   - Mission Control world
+   - Kernel world
+
+   IMPORTANT:
+   The Style Settings plugin applies one of these classes:
+
+   .engineering-foundation
+   .engineering-circuit
+   .engineering-catalyst
+   .engineering-machina
+   .engineering-kinematics
+   .engineering-mission-control
+   .engineering-kernel
+
+   The classes control the COMPLETE visual system.
+   ========================================================= */
+
+
+/* =========================================================
+   01 — GLOBAL BASE
+   ========================================================= */
+
+.theme-dark,
+.theme-light {
+
+  /* ---------- Layout ---------- */
+
+  --eng-reading-width: 850px;
+  --eng-reading-font-size: 17px;
+  --eng-reading-line-height: 1.75;
+
+  --eng-radius-xs: 2px;
+  --eng-radius-sm: 4px;
+  --eng-radius-md: 7px;
+  --eng-radius-lg: 10px;
+
+  --eng-transition-fast: 100ms;
+  --eng-transition-normal: 180ms;
+
+  /* ---------- Typography ---------- */
+
+  --eng-font-ui:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  --eng-font-body:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  --eng-font-heading:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  --eng-font-mono:
+    "JetBrains Mono",
+    "IBM Plex Mono",
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+  /* ---------- Default shadows ---------- */
+
+  --eng-shadow-sm:
+    0 2px 8px rgba(0, 0, 0, 0.16);
+
+  --eng-shadow-md:
+    0 8px 24px rgba(0, 0, 0, 0.22);
+
+  --eng-shadow-lg:
+    0 18px 50px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================================
+   02 — FOUNDATION WORLD
+   Blueprint / Structural Engineering
+   ========================================================= */
+
+body.engineering-foundation {
+
+  --eng-discipline: "FOUNDATION";
+
+  --eng-background: #0b1116;
+  --eng-background-secondary: #0f171e;
+
+  --eng-editor: #101a22;
+  --eng-panel: #121d25;
+  --eng-panel-raised: #17232c;
+
+  --eng-card: #14212a;
+  --eng-modal: #16242d;
+
+  --eng-border: #29404d;
+  --eng-border-strong: #416170;
+
+  --eng-structure-line: rgba(91, 148, 176, 0.09);
+  --eng-technical-line: rgba(91, 148, 176, 0.14);
+
+  --eng-primary: #68b5d1;
+  --eng-secondary: #8cc9dc;
+
+  --eng-glow: rgba(104, 181, 209, 0.18);
+
+  --eng-text: #d7e4e9;
+  --eng-text-bright: #f1f7f9;
+  --eng-text-muted: #8298a3;
+  --eng-text-faint: #617680;
+
+  --eng-quote: #a5cbd8;
+
+  --eng-hover: rgba(104, 181, 209, 0.08);
+  --eng-active: rgba(104, 181, 209, 0.13);
+
+  --eng-success: #78c7a3;
+  --eng-warning: #d8b46b;
+  --eng-error: #d87979;
+
+  --eng-component-radius: 4px;
+}
+
+
+/* =========================================================
+   03 — CIRCUIT WORLD
+   Electronics / PCB / Signal Engineering
+   ========================================================= */
+
+body.engineering-circuit {
+
+  --eng-discipline: "CIRCUIT";
+
+  --eng-background: #060c0d;
+  --eng-background-secondary: #081214;
+
+  --eng-editor: #091416;
+  --eng-panel: #0b191b;
+  --eng-panel-raised: #0e2224;
+
+  --eng-card: #0d1d1f;
+  --eng-modal: #0e2022;
+
+  --eng-border: #174448;
+  --eng-border-strong: #247075;
+
+  --eng-structure-line: rgba(61, 229, 188, 0.08);
+  --eng-technical-line: rgba(61, 229, 188, 0.16);
+
+  --eng-primary: #39e0b2;
+  --eng-secondary: #5fe8c3;
+
+  --eng-glow: rgba(57, 224, 178, 0.22);
+
+  --eng-text: #d4ebe6;
+  --eng-text-bright: #f1fffb;
+  --eng-text-muted: #789b95;
+  --eng-text-faint: #587570;
+
+  --eng-quote: #91d9ca;
+
+  --eng-hover: rgba(57, 224, 178, 0.08);
+  --eng-active: rgba(57, 224, 178, 0.14);
+
+  --eng-success: #58e0a0;
+  --eng-warning: #e3bb65;
+  --eng-error: #e56e72;
+
+  --eng-component-radius: 2px;
+}
+
+
+/* =========================================================
+   04 — CATALYST WORLD
+   Chemistry / Materials / Laboratory
+   ========================================================= */
+
+body.engineering-catalyst {
+
+  --eng-discipline: "CATALYST";
+
+  --eng-background: #11100f;
+  --eng-background-secondary: #171513;
+
+  --eng-editor: #191715;
+  --eng-panel: #1d1a17;
+  --eng-panel-raised: #25211d;
+
+  --eng-card: #211d19;
+  --eng-modal: #25211d;
+
+  --eng-border: #4b4035;
+  --eng-border-strong: #6a5745;
+
+  --eng-structure-line: rgba(213, 155, 92, 0.07);
+  --eng-technical-line: rgba(213, 155, 92, 0.13);
+
+  --eng-primary: #d69b5c;
+  --eng-secondary: #e4b478;
+
+  --eng-glow: rgba(214, 155, 92, 0.17);
+
+  --eng-text: #e8dfd3;
+  --eng-text-bright: #fff8ef;
+  --eng-text-muted: #a49787;
+  --eng-text-faint: #786d61;
+
+  --eng-quote: #d5b994;
+
+  --eng-hover: rgba(214, 155, 92, 0.08);
+  --eng-active: rgba(214, 155, 92, 0.13);
+
+  --eng-success: #86c79b;
+  --eng-warning: #e1b85d;
+  --eng-error: #df7770;
+
+  --eng-component-radius: 8px;
+}
+
+
+/* =========================================================
+   05 — MACHINA WORLD
+   Mechanical / Industrial / Manufacturing
+   ========================================================= */
+
+body.engineering-machina {
+
+  --eng-discipline: "MACHINA";
+
+  --eng-background: #0d0f10;
+  --eng-background-secondary: #131617;
+
+  --eng-editor: #15191a;
+  --eng-panel: #191d1e;
+  --eng-panel-raised: #202526;
+
+  --eng-card: #1d2223;
+  --eng-modal: #222728;
+
+  --eng-border: #394244;
+  --eng-border-strong: #5b6669;
+
+  --eng-structure-line: rgba(170, 182, 185, 0.07);
+  --eng-technical-line: rgba(170, 182, 185, 0.13);
+
+  --eng-primary: #c0c9ca;
+  --eng-secondary: #e0e5e5;
+
+  --eng-glow: rgba(192, 201, 202, 0.10);
+
+  --eng-text: #d6dddd;
+  --eng-text-bright: #f4f7f7;
+  --eng-text-muted: #8b9698;
+  --eng-text-faint: #697375;
+
+  --eng-quote: #b8c2c4;
+
+  --eng-hover: rgba(192, 201, 202, 0.07);
+  --eng-active: rgba(192, 201, 202, 0.12);
+
+  --eng-success: #85c99b;
+  --eng-warning: #d4ad62;
+  --eng-error: #d87777;
+
+  --eng-component-radius: 3px;
+}
+
+
+/* =========================================================
+   06 — KINEMATICS WORLD
+   Motion / Vectors / Dynamics
+   ========================================================= */
+
+body.engineering-kinematics {
+
+  --eng-discipline: "KINEMATICS";
+
+  --eng-background: #091018;
+  --eng-background-secondary: #0d1620;
+
+  --eng-editor: #0e1924;
+  --eng-panel: #111e2a;
+  --eng-panel-raised: #172632;
+
+  --eng-card: #14222e;
+  --eng-modal: #172631;
+
+  --eng-border: #28485b;
+  --eng-border-strong: #3e6b83;
+
+  --eng-structure-line: rgba(91, 166, 204, 0.08);
+  --eng-technical-line: rgba(91, 166, 204, 0.15);
+
+  --eng-primary: #63b7e6;
+  --eng-secondary: #87c9ed;
+
+  --eng-glow: rgba(99, 183, 230, 0.18);
+
+  --eng-text: #d7e6ef;
+  --eng-text-bright: #f2f9fd;
+  --eng-text-muted: #8099a7;
+  --eng-text-faint: #617782;
+
+  --eng-quote: #a4cee3;
+
+  --eng-hover: rgba(99, 183, 230, 0.08);
+  --eng-active: rgba(99, 183, 230, 0.14);
+
+  --eng-success: #78c9a4;
+  --eng-warning: #dfb563;
+  --eng-error: #dd777b;
+
+  --eng-component-radius: 5px;
+}
+
+
+/* =========================================================
+   07 — MISSION CONTROL WORLD
+   Aerospace / Telemetry / Command Systems
+   ========================================================= */
+
+body.engineering-mission-control {
+
+  --eng-discipline: "MISSION CONTROL";
+
+  --eng-background: #080c0d;
+  --eng-background-secondary: #0b1112;
+
+  --eng-editor: #0c1315;
+  --eng-panel: #10191b;
+  --eng-panel-raised: #152022;
+
+  --eng-card: #121c1e;
+  --eng-modal: #162123;
+
+  --eng-border: #254044;
+  --eng-border-strong: #3a6267;
+
+  --eng-structure-line: rgba(93, 218, 179, 0.07);
+  --eng-technical-line: rgba(93, 218, 179, 0.14);
+
+  --eng-primary: #64d9b1;
+  --eng-secondary: #86e6c3;
+
+  --eng-glow: rgba(100, 217, 177, 0.16);
+
+  --eng-text: #d5e7e1;
+  --eng-text-bright: #f1faf7;
+  --eng-text-muted: #7f9c95;
+  --eng-text-faint: #5e7872;
+
+  --eng-quote: #9bd5c5;
+
+  --eng-hover: rgba(100, 217, 177, 0.07);
+  --eng-active: rgba(100, 217, 177, 0.13);
+
+  --eng-success: #66e09d;
+  --eng-warning: #dfb763;
+  --eng-error: #df7377;
+
+  --eng-component-radius: 3px;
+}
+
+
+/* =========================================================
+   08 — KERNEL WORLD
+   Software / Systems / Terminal
+   ========================================================= */
+
+body.engineering-kernel {
+
+  --eng-discipline: "KERNEL";
+
+  --eng-background: #070b09;
+  --eng-background-secondary: #0b100d;
+
+  --eng-editor: #0b110e;
+  --eng-panel: #0f1712;
+  --eng-panel-raised: #141e17;
+
+  --eng-card: #111a14;
+  --eng-modal: #152018;
+
+  --eng-border: #29402f;
+  --eng-border-strong: #3e6348;
+
+  --eng-structure-line: rgba(104, 220, 130, 0.07);
+  --eng-technical-line: rgba(104, 220, 130, 0.14);
+
+  --eng-primary: #79d98a;
+  --eng-secondary: #9ae8a6;
+
+  --eng-glow: rgba(121, 217, 138, 0.17);
+
+  --eng-text: #d6e6d8;
+  --eng-text-bright: #effaf0;
+  --eng-text-muted: #7f9882;
+  --eng-text-faint: #5f7462;
+
+  --eng-quote: #a1cda6;
+
+  --eng-hover: rgba(121, 217, 138, 0.07);
+  --eng-active: rgba(121, 217, 138, 0.13);
+
+  --eng-success: #7ee69a;
+  --eng-warning: #dfb45e;
+  --eng-error: #df7077;
+
+  --eng-component-radius: 3px;
+
+  --eng-font-ui:
+    "IBM Plex Mono",
+    "JetBrains Mono",
+    monospace;
+
+  --eng-font-body:
+    "IBM Plex Mono",
+    "JetBrains Mono",
+    monospace;
+
+  --eng-font-heading:
+    "IBM Plex Mono",
+    "JetBrains Mono",
+    monospace;
+}
+
+
+/* =========================================================
+   09 — APPLY CORE VARIABLES
+   ========================================================= */
+
+body.engineering-foundation,
+body.engineering-circuit,
+body.engineering-catalyst,
+body.engineering-machina,
+body.engineering-kinematics,
+body.engineering-mission-control,
+body.engineering-kernel {
+
+  --background-primary: var(--eng-background);
+  --background-primary-alt: var(--eng-background-secondary);
+  --background-secondary: var(--eng-panel);
+  --background-secondary-alt: var(--eng-panel-raised);
+
+  --background-modifier-border: var(--eng-border);
+  --background-modifier-border-hover: var(--eng-border-strong);
+
+  --background-modifier-hover: var(--eng-hover);
+  --background-modifier-active-hover: var(--eng-active);
+
+  --text-normal: var(--eng-text);
+  --text-muted: var(--eng-text-muted);
+  --text-faint: var(--eng-text-faint);
+  --text-accent: var(--eng-primary);
+
+  --interactive-accent: var(--eng-primary);
+  --interactive-accent-hover: var(--eng-secondary);
+
+  --interactive-normal: var(--eng-panel);
+  --interactive-hover: var(--eng-hover);
+
+  --color-accent: var(--eng-primary);
+
+  --divider-color: var(--eng-border);
+
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--eng-border);
+  --scrollbar-active-thumb-bg: var(--eng-primary);
+
+  --font-interface: var(--eng-font-ui);
+  --font-text: var(--eng-font-body);
+  --font-monospace: var(--eng-font-mono);
+
+  --code-background: var(--eng-panel);
+  --blockquote-border-color: var(--eng-primary);
+
+  --tag-background: var(--eng-active);
+  --tag-color: var(--eng-primary);
+
+  --link-color: var(--eng-primary);
+  --link-color-hover: var(--eng-secondary);
+}
+
+
+/* =========================================================
+   10 — GLOBAL BACKGROUND
+   ========================================================= */
+
+body.engineering-foundation,
+body.engineering-circuit,
+body.engineering-catalyst,
+body.engineering-machina,
+body.engineering-kinematics,
+body.engineering-mission-control,
+body.engineering-kernel,
+body.engineering-foundation .workspace,
+body.engineering-circuit .workspace,
+body.engineering-catalyst .workspace,
+body.engineering-machina .workspace,
+body.engineering-kinematics .workspace,
+body.engineering-mission-control .workspace,
+body.engineering-kernel .workspace {
+
+  background-color: var(--eng-background);
+  color: var(--eng-text);
+}
+
+
+/* =========================================================
+   11 — WORKSPACE BASE
+   ========================================================= */
+
+.workspace,
+.workspace-split,
+.workspace-leaf,
+.workspace-leaf-content {
+
+  background-color: var(--eng-editor);
+  color: var(--eng-text);
+}
+
+
+/* =========================================================
+   12 — GLOBAL PANELS
+   ========================================================= */
+
+.workspace-ribbon,
+.workspace-tab-header-container,
+.status-bar,
+.view-header,
+.nav-header,
+.metadata-container {
+
+  background-color: var(--eng-panel);
+  border-color: var(--eng-border);
+}
+
+
+/* =========================================================
+   13 — GLOBAL BORDERS
+   ========================================================= */
+
+.workspace-tab-header-container,
+.workspace-ribbon,
+.status-bar,
+.view-header,
+.nav-header {
+
+  border-color: var(--eng-border);
+}
+
+
+/* =========================================================
+   14 — GLOBAL TEXT
+   ========================================================= */
+
+body.engineering-foundation *,
+body.engineering-circuit *,
+body.engineering-catalyst *,
+body.engineering-machina *,
+body.engineering-kinematics *,
+body.engineering-mission-control *,
+body.engineering-kernel * {
+
+  --icon-color: var(--eng-text-muted);
+  --icon-color-hover: var(--eng-primary);
+}
+
+
+/* =========================================================
+   15 — ACTIVE TAB
+   ========================================================= */
+
+.workspace-tab-header.is-active {
+
+  color: var(--eng-text-bright);
+  background: var(--eng-active);
+
+  box-shadow:
+    inset 0 -2px 0 var(--eng-primary);
+}
+
+
+/* =========================================================
+   16 — HOVER
+   ========================================================= */
+
+.workspace-tab-header:hover,
+.nav-file-title:hover,
+.nav-folder-title:hover {
+
+  background: var(--eng-hover);
+}
+
+
+/* =========================================================
+   17 — ACTIVE FILE
+   ========================================================= */
+
+.nav-file-title.is-active,
+.tree-item-self.is-active {
+
+  background: var(--eng-active);
+  color: var(--eng-text-bright);
+
+  box-shadow:
+    inset 2px 0 0 var(--eng-primary);
+}
+
+
+/* =========================================================
+   18 — DISCIPLINE IDENTIFICATION
+   ========================================================= */
+
+.view-header-title::after {
+
+  content: "  /  " var(--eng-discipline);
+
+  margin-left: 8px;
+
+  color: var(--eng-primary);
+
+  font-family: var(--eng-font-mono);
+  font-size: 0.62em;
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  opacity: 0.72;
+}
+
+
+/* =========================================================
+   19 — FOUNDATION VISUAL LANGUAGE
+   ========================================================= */
+
+body.engineering-foundation .workspace-leaf-content {
+
+  background-image:
+    linear-gradient(
+      to right,
+      var(--eng-structure-line) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--eng-structure-line) 1px,
+      transparent 1px
+    );
+
+  background-size: 48px 48px;
+}
+
+
+/* =========================================================
+   20 — CIRCUIT VISUAL LANGUAGE
+   ========================================================= */
+
+body.engineering-circuit .workspace-leaf-content {
+
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 23px,
+      var(--eng-structure-line) 24px,
+      transparent 25px
+    ),
+    linear-gradient(
+      transparent 23px,
+      var(--eng-structure-line) 24px,
+      transparent 25px
+    );
+
+  background-size: 48px 48px;
+}
+
+
+/* =========================================================
+   21 — CATALYST VISUAL LANGUAGE
+   ========================================================= */
+
+body.engineering-catalyst .workspace-leaf-content {
+
+  background-image:
+    radial-gradient(
+      circle at 15% 20%,
+      var(--eng-structure-line),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 85% 75%,
+      var(--eng-technical-line),
+      transparent 22%
+    );
+}
+
+
+/* =========================================================
+   22 — MACHINA VISUAL LANGUAGE
+   ========================================================= */
+
+body.engineering-machina .workspace-leaf-content {
+
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 31px,
+      var(--eng-structure-line) 32px
+    );
+}
+
+
+/* =========================================================
+   23 — KINEMATICS VISUAL LANGUAGE
+   ========================================================= */
+
+body.engineering-kinematics .workspace-leaf-content {
+
+  background-image:
+    linear-gradient(
+      120deg,
+      transparent 49%,
+      var(--eng-structure-line) 50%,
+      transparent 51%
+    );
+
+  background-size: 72px 72px;
+}
+
+
+/* =========================================================
+   24 — MISSION CONTROL VISUAL LANGUAGE
+   ========================================================= */
+
+body.engineering-mission-control .workspace-leaf-content {
+
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 31px,
+      var(--eng-structure-line) 32px
+    ),
+    linear-gradient(
+      0deg,
+      transparent 31px,
+      var(--eng-structure-line) 32px
+    );
+
+  background-size: 32px 32px;
+}
+
+
+/* =========================================================
+   25 — KERNEL VISUAL LANGUAGE
+   ========================================================= */
+
+body.engineering-kernel .workspace-leaf-content {
+
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 39px,
+      var(--eng-structure-line) 40px
+    );
+
+  background-size: 40px 40px;
+}
+
+
+/* =========================================================
+   26 — DISCIPLINE GEOMETRY
+   ========================================================= */
+
+body.engineering-foundation .callout,
+body.engineering-foundation .canvas-node,
+body.engineering-foundation .metadata-property {
+  border-radius: 4px;
+}
+
+body.engineering-circuit .callout,
+body.engineering-circuit .canvas-node,
+body.engineering-circuit .metadata-property {
+  border-radius: 2px;
+}
+
+body.engineering-catalyst .callout,
+body.engineering-catalyst .canvas-node,
+body.engineering-catalyst .metadata-property {
+  border-radius: 9px;
+}
+
+body.engineering-machina .callout,
+body.engineering-machina .canvas-node,
+body.engineering-machina .metadata-property {
+  border-radius: 3px;
+}
+
+body.engineering-kinematics .callout,
+body.engineering-kinematics .canvas-node,
+body.engineering-kinematics .metadata-property {
+  border-radius: 5px;
+}
+
+body.engineering-mission-control .callout,
+body.engineering-mission-control .canvas-node,
+body.engineering-mission-control .metadata-property {
+  border-radius: 3px;
+}
+
+body.engineering-kernel .callout,
+body.engineering-kernel .canvas-node,
+body.engineering-kernel .metadata-property {
+  border-radius: 3px;
+}
+
+
+/* =========================================================
+   27 — DISCIPLINE TYPOGRAPHY
+   ========================================================= */
+
+body.engineering-foundation {
+  --eng-font-heading:
+    "IBM Plex Sans",
+    Inter,
+    sans-serif;
+}
+
+body.engineering-circuit {
+  --eng-font-heading:
+    "IBM Plex Mono",
+    "JetBrains Mono",
+    monospace;
+}
+
+body.engineering-catalyst {
+  --eng-font-heading:
+    "IBM Plex Serif",
+    Georgia,
+    serif;
+}
+
+body.engineering-machina {
+  --eng-font-heading:
+    "Roboto Condensed",
+    "Arial Narrow",
+    sans-serif;
+}
+
+body.engineering-kinematics {
+  --eng-font-heading:
+    "Inter",
+    sans-serif;
+}
+
+body.engineering-mission-control {
+  --eng-font-heading:
+    "IBM Plex Mono",
+    monospace;
+}
+
+body.engineering-kernel {
+  --eng-font-heading:
+    "IBM Plex Mono",
+    "JetBrains Mono",
+    monospace;
+}
+
+
+/* =========================================================
+   28 — HEADING WORLD
+   ========================================================= */
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+
+  font-family: var(--eng-font-heading);
+  color: var(--eng-text-bright);
+}
+
+
+/* =========================================================
+   29 — BODY WORLD
+   ========================================================= */
+
+.markdown-preview-view,
+.markdown-source-view {
+
+  font-family: var(--eng-font-body);
+  color: var(--eng-text);
+}
+
+
+/* =========================================================
+   30 — CODE WORLD
+   ========================================================= */
+
+code,
+pre,
+.cm-inline-code,
+.cm-hmd-codeblock {
+
+  font-family: var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   31 — DISCIPLINE-SPECIFIC HEADING DETAILS
+   ========================================================= */
+
+body.engineering-foundation
+.markdown-preview-view h2 {
+  border-left: 3px solid var(--eng-primary);
+  padding-left: 10px;
+}
+
+body.engineering-circuit
+.markdown-preview-view h2::before {
+  content: ">";
+  color: var(--eng-primary);
+  font-family: var(--eng-font-mono);
+  margin-right: 8px;
+}
+
+body.engineering-catalyst
+.markdown-preview-view h2 {
+  font-weight: 600;
+}
+
+body.engineering-machina
+.markdown-preview-view h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+body.engineering-kinematics
+.markdown-preview-view h2::before {
+  content: "→";
+  color: var(--eng-primary);
+  margin-right: 8px;
+}
+
+body.engineering-mission-control
+.markdown-preview-view h2::before {
+  content: "SYS";
+  color: var(--eng-primary);
+  font-family: var(--eng-font-mono);
+  font-size: 0.5em;
+  margin-right: 8px;
+}
+
+body.engineering-kernel
+.markdown-preview-view h2::before {
+  content: "$";
+  color: var(--eng-primary);
+  font-family: var(--eng-font-mono);
+  margin-right: 8px;
+}
+
+
+/* =========================================================
+   32 — STYLE SETTINGS
+   ========================================================= */
+
+/*
+@settings
+
+name: Engineering
+id: engineering-theme
+settings:
+
+  -
+    id: engineering-discipline
+    title: Engineering Discipline
+    description: Switch the complete Engineering visual world.
+    type: class-select
+    allowEmpty: false
+    default: engineering-foundation
+
+    options:
+
+      -
+        label: Foundation
+        value: engineering-foundation
+
+      -
+        label: Circuit
+        value: engineering-circuit
+
+      -
+        label: Catalyst
+        value: engineering-catalyst
+
+      -
+        label: Machina
+        value: engineering-machina
+
+      -
+        label: Kinematics
+        value: engineering-kinematics
+
+      -
+        label: Mission Control
+        value: engineering-mission-control
+
+      -
+        label: Kernel
+        value: engineering-kernel
+
+*/
+
+
+/* =========================================================
+   33 — SAFETY FALLBACK
+   ========================================================= */
+
+body:not(
+  .engineering-foundation,
+  .engineering-circuit,
+  .engineering-catalyst,
+  .engineering-machina,
+  .engineering-kinematics,
+  .engineering-mission-control,
+  .engineering-kernel
+) {
+
+  --eng-discipline: "FOUNDATION";
+
+  --eng-background: #0b1116;
+  --eng-editor: #101a22;
+  --eng-panel: #121d25;
+  --eng-primary: #68b5d1;
+
+  --eng-text: #d7e4e9;
+  --eng-text-bright: #f1f7f9;
+  --eng-text-muted: #8298a3;
+  --eng-border: #29404d;
+}
+
+
+/* =========================================================
+   END PART 1 / 4
+   ========================================================= */
+   /* =========================================================
+   ENGINEERING OBSIDIAN THEME
+   CORRECTED VERSION — PART 2 / 4
+
+   PART 2:
+   - Application UI
+   - Title bar
+   - Ribbon
+   - Workspace
+   - Tabs
+   - Sidebars
+   - Status bar
+   - Editor foundation
+   - Reading view
+   - Live Preview
+   - Source mode
+   - Selection / cursor
+   - Discipline-specific UI worlds
+   ========================================================= */
+
+
+/* =========================================================
+   34 — APPLICATION ROOT
+   ========================================================= */
+
+body.engineering-foundation,
+body.engineering-circuit,
+body.engineering-catalyst,
+body.engineering-machina,
+body.engineering-kinematics,
+body.engineering-mission-control,
+body.engineering-kernel {
+
+  --eng-ui-background: var(--eng-panel);
+  --eng-ui-background-raised: var(--eng-panel-raised);
+  --eng-ui-border: var(--eng-border);
+
+  --eng-ui-hover: var(--eng-hover);
+  --eng-ui-active: var(--eng-active);
+
+  --eng-ui-radius: var(--eng-component-radius);
+}
+
+
+/* =========================================================
+   35 — APPLICATION CONTAINER
+   ========================================================= */
+
+.app-container,
+.app-container .workspace {
+
+  background-color: var(--eng-background);
+  color: var(--eng-text);
+}
+
+
+/* =========================================================
+   36 — TITLE BAR
+   ========================================================= */
+
+.titlebar {
+
+  background: var(--eng-panel);
+  color: var(--eng-text);
+  border-bottom: 1px solid var(--eng-border);
+
+  font-family: var(--eng-font-ui);
+}
+
+.titlebar-text {
+
+  color: var(--eng-text-muted);
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   37 — TITLE BAR DISCIPLINE IDENTITY
+   ========================================================= */
+
+body.engineering-foundation .titlebar-text::before {
+  content: "FOUNDATION";
+}
+
+body.engineering-circuit .titlebar-text::before {
+  content: "CIRCUIT";
+}
+
+body.engineering-catalyst .titlebar-text::before {
+  content: "CATALYST";
+}
+
+body.engineering-machina .titlebar-text::before {
+  content: "MACHINA";
+}
+
+body.engineering-kinematics .titlebar-text::before {
+  content: "KINEMATICS";
+}
+
+body.engineering-mission-control .titlebar-text::before {
+  content: "MISSION CONTROL";
+}
+
+body.engineering-kernel .titlebar-text::before {
+  content: "KERNEL";
+}
+
+.titlebar-text::before {
+
+  margin-right: 8px;
+
+  color: var(--eng-primary);
+
+  font-family: var(--eng-font-mono);
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   38 — TITLE BAR WINDOW BUTTONS
+   ========================================================= */
+
+.titlebar-button {
+
+  color: var(--eng-text-muted);
+}
+
+.titlebar-button:hover {
+
+  color: var(--eng-primary);
+  background: var(--eng-hover);
+}
+
+
+/* =========================================================
+   39 — RIBBON
+   ========================================================= */
+
+.workspace-ribbon {
+
+  background: var(--eng-panel);
+  border-right: 1px solid var(--eng-border);
+
+  color: var(--eng-text-muted);
+}
+
+
+/* =========================================================
+   40 — RIBBON ICONS
+   ========================================================= */
+
+.workspace-ribbon .clickable-icon {
+
+  color: var(--eng-text-muted);
+  border-radius: var(--eng-ui-radius);
+}
+
+.workspace-ribbon .clickable-icon:hover {
+
+  color: var(--eng-primary);
+  background: var(--eng-hover);
+}
+
+.workspace-ribbon .clickable-icon.is-active {
+
+  color: var(--eng-primary);
+  background: var(--eng-active);
+}
+
+
+/* =========================================================
+   41 — RIBBON DISCIPLINE MARK
+   ========================================================= */
+
+body.engineering-foundation .workspace-ribbon {
+  border-right-width: 2px;
+}
+
+body.engineering-circuit .workspace-ribbon {
+  border-right-color: var(--eng-primary);
+}
+
+body.engineering-catalyst .workspace-ribbon {
+  border-right-width: 3px;
+}
+
+body.engineering-machina .workspace-ribbon {
+  border-right-width: 2px;
+}
+
+body.engineering-kinematics .workspace-ribbon {
+  border-right-style: dashed;
+}
+
+body.engineering-mission-control .workspace-ribbon {
+  border-right-color: var(--eng-primary);
+}
+
+body.engineering-kernel .workspace-ribbon {
+  border-right-style: solid;
+}
+
+
+/* =========================================================
+   42 — WORKSPACE SPLITS
+   ========================================================= */
+
+.workspace-split {
+
+  background: var(--eng-editor);
+}
+
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-split.mod-horizontal > .workspace-leaf {
+
+  border-color: var(--eng-border);
+}
+
+
+/* =========================================================
+   43 — RESIZE HANDLES
+   ========================================================= */
+
+.workspace-leaf-resize-handle {
+
+  background: transparent;
+}
+
+.workspace-leaf-resize-handle:hover {
+
+  background: var(--eng-primary);
+}
+
+
+/* =========================================================
+   44 — VIEW HEADER
+   ========================================================= */
+
+.view-header {
+
+  background: var(--eng-panel);
+  border-bottom: 1px solid var(--eng-border);
+
+  min-height: 40px;
+}
+
+
+/* =========================================================
+   45 — VIEW HEADER TITLE
+   ========================================================= */
+
+.view-header-title {
+
+  color: var(--eng-text-bright);
+
+  font-family: var(--eng-font-ui);
+  font-weight: 650;
+}
+
+
+/* =========================================================
+   46 — VIEW HEADER ICONS
+   ========================================================= */
+
+.view-header-icon,
+.view-actions .clickable-icon {
+
+  color: var(--eng-text-muted);
+}
+
+.view-header-icon:hover,
+.view-actions .clickable-icon:hover {
+
+  color: var(--eng-primary);
+  background: var(--eng-hover);
+}
+
+
+/* =========================================================
+   47 — TAB HEADER CONTAINER
+   ========================================================= */
+
+.workspace-tab-header-container {
+
+  background: var(--eng-panel);
+  border-bottom: 1px solid var(--eng-border);
+}
+
+
+/* =========================================================
+   48 — TAB HEADER
+   ========================================================= */
+
+.workspace-tab-header {
+
+  color: var(--eng-text-muted);
+
+  border-radius:
+    var(--eng-ui-radius)
+    var(--eng-ui-radius)
+    0
+    0;
+
+  transition:
+    background-color var(--eng-transition-fast),
+    color var(--eng-transition-fast);
+}
+
+
+/* =========================================================
+   49 — TAB HOVER
+   ========================================================= */
+
+.workspace-tab-header:hover {
+
+  color: var(--eng-text);
+  background: var(--eng-hover);
+}
+
+
+/* =========================================================
+   50 — ACTIVE TAB
+   ========================================================= */
+
+.workspace-tab-header.is-active {
+
+  color: var(--eng-text-bright);
+  background: var(--eng-active);
+
+  box-shadow:
+    inset 0 -2px 0 var(--eng-primary);
+}
+
+
+/* =========================================================
+   51 — TAB CLOSE BUTTON
+   ========================================================= */
+
+.workspace-tab-header-inner-close-button {
+
+  color: var(--eng-text-muted);
+}
+
+.workspace-tab-header-inner-close-button:hover {
+
+  color: var(--eng-error);
+  background: transparent;
+}
+
+
+/* =========================================================
+   52 — SIDEBAR
+   ========================================================= */
+
+.workspace-sidedock-vault-profile,
+.workspace-sidedock {
+
+  background: var(--eng-panel);
+}
+
+
+/* =========================================================
+   53 — SIDEBAR DIVIDERS
+   ========================================================= */
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+
+  border-color: var(--eng-border);
+}
+
+
+/* =========================================================
+   54 — SIDEBAR HEADER
+   ========================================================= */
+
+.nav-header {
+
+  background: var(--eng-panel);
+  border-bottom: 1px solid var(--eng-border);
+}
+
+
+/* =========================================================
+   55 — SIDEBAR HEADER BUTTONS
+   ========================================================= */
+
+.nav-action-button {
+
+  color: var(--eng-text-muted);
+}
+
+.nav-action-button:hover {
+
+  color: var(--eng-primary);
+  background: var(--eng-hover);
+}
+
+
+/* =========================================================
+   56 — FILE EXPLORER
+   ========================================================= */
+
+.nav-files-container {
+
+  background: var(--eng-panel);
+}
+
+
+/* =========================================================
+   57 — FILE TITLE
+   ========================================================= */
+
+.nav-file-title,
+.nav-folder-title {
+
+  color: var(--eng-text);
+
+  border-radius:
+    var(--eng-ui-radius);
+
+  transition:
+    background-color var(--eng-transition-fast),
+    color var(--eng-transition-fast);
+}
+
+
+/* =========================================================
+   58 — FILE HOVER
+   ========================================================= */
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+
+  color: var(--eng-text-bright);
+  background: var(--eng-hover);
+}
+
+
+/* =========================================================
+   59 — ACTIVE FILE
+   ========================================================= */
+
+.nav-file-title.is-active {
+
+  color: var(--eng-text-bright);
+  background: var(--eng-active);
+
+  box-shadow:
+    inset 2px 0 0 var(--eng-primary);
+}
+
+
+/* =========================================================
+   60 — FOLDER TITLE
+   ========================================================= */
+
+.nav-folder-title {
+
+  font-weight: 600;
+}
+
+.nav-folder-title-content {
+
+  color: var(--eng-text);
+}
+
+
+/* =========================================================
+   61 — FOLDER COLLAPSE ICON
+   ========================================================= */
+
+.nav-folder-collapse-indicator {
+
+  color: var(--eng-text-muted);
+}
+
+.nav-folder-collapse-indicator:hover {
+
+  color: var(--eng-primary);
+}
+
+
+/* =========================================================
+   62 — STATUS BAR
+   ========================================================= */
+
+.status-bar {
+
+  background: var(--eng-panel);
+  border-top: 1px solid var(--eng-border);
+
+  color: var(--eng-text-muted);
+
+  font-family: var(--eng-font-mono);
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   63 — STATUS BAR ACTIVE
+   ========================================================= */
+
+.status-bar-item:hover {
+
+  color: var(--eng-primary);
+}
+
+
+/* =========================================================
+   64 — STATUS BAR DISCIPLINE
+   ========================================================= */
+
+body.engineering-foundation .status-bar {
+  border-top-color: var(--eng-primary);
+}
+
+body.engineering-circuit .status-bar {
+  border-top: 1px solid var(--eng-primary);
+}
+
+body.engineering-catalyst .status-bar {
+  border-top: 2px solid var(--eng-primary);
+}
+
+body.engineering-machina .status-bar {
+  border-top: 2px double var(--eng-border-strong);
+}
+
+body.engineering-kinematics .status-bar {
+  border-top-style: dashed;
+}
+
+body.engineering-mission-control .status-bar {
+  border-top-color: var(--eng-primary);
+}
+
+body.engineering-kernel .status-bar {
+  font-family: var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   65 — EDITOR ROOT
+   ========================================================= */
+
+.markdown-source-view,
+.markdown-preview-view {
+
+  background: var(--eng-editor);
+  color: var(--eng-text);
+}
+
+
+/* =========================================================
+   66 — READING VIEW
+   ========================================================= */
+
+.markdown-preview-view {
+
+  font-family: var(--eng-font-body);
+
+  font-size:
+    var(--eng-reading-font-size);
+
+  line-height:
+    var(--eng-reading-line-height);
+}
+
+
+/* =========================================================
+   67 — READING WIDTH
+   ========================================================= */
+
+.markdown-preview-view .markdown-preview-sizer {
+
+  width: 100%;
+  max-width: var(--eng-reading-width);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-bottom: 120px;
+}
+
+
+/* =========================================================
+   68 — READING SIDE PADDING
+   ========================================================= */
+
+.markdown-preview-view .markdown-preview-sizer {
+
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+
+/* =========================================================
+   69 — PARAGRAPH
+   ========================================================= */
+
+.markdown-preview-view p {
+
+  margin-top: 0;
+  margin-bottom: 1.05em;
+
+  color: var(--eng-text);
+}
+
+
+/* =========================================================
+   70 — READING SELECTION
+   ========================================================= */
+
+::selection {
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 28%,
+      transparent
+    );
+
+  color: var(--eng-text-bright);
+}
+
+
+/* =========================================================
+   71 — SOURCE MODE
+   ========================================================= */
+
+.markdown-source-view.mod-cm6 {
+
+  background: var(--eng-editor);
+}
+
+
+/* =========================================================
+   72 — CODEMIRROR SCROLLER
+   ========================================================= */
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+
+  font-family: var(--eng-font-body);
+
+  scrollbar-color:
+    var(--eng-border)
+    transparent;
+}
+
+
+/* =========================================================
+   73 — CODEMIRROR CONTENT
+   ========================================================= */
+
+.markdown-source-view.mod-cm6 .cm-content {
+
+  max-width: var(--eng-reading-width);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-bottom: 160px;
+
+  color: var(--eng-text);
+
+  font-size:
+    var(--eng-reading-font-size);
+
+  line-height:
+    var(--eng-reading-line-height);
+}
+
+
+/* =========================================================
+   74 — CODEMIRROR GUTTER
+   ========================================================= */
+
+.markdown-source-view.mod-cm6 .cm-gutters {
+
+  background: var(--eng-editor);
+  border-right: 1px solid var(--eng-border);
+
+  color: var(--eng-text-faint);
+}
+
+
+/* =========================================================
+   75 — LINE NUMBERS
+   ========================================================= */
+
+.markdown-source-view.mod-cm6 .cm-lineNumbers .cm-gutterElement {
+
+  color: var(--eng-text-faint);
+
+  font-family: var(--eng-font-mono);
+  font-size: 0.72em;
+}
+
+
+/* =========================================================
+   76 — ACTIVE LINE
+   ========================================================= */
+
+.markdown-source-view.mod-cm6 .cm-activeLine {
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 4%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   77 — ACTIVE LINE NUMBER
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-activeLineGutter {
+
+  color: var(--eng-primary);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 7%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   78 — CURSOR
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-cursor,
+.markdown-source-view.mod-cm6
+.cm-dropCursor {
+
+  border-left-color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   79 — TEXT SELECTION
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-selectionBackground,
+.markdown-source-view.mod-cm6
+.cm-content ::selection {
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 25%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   80 — LIVE PREVIEW HEADINGS
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-header {
+
+  color: var(--eng-text-bright);
+
+  font-family: var(--eng-font-heading);
+}
+
+
+/* =========================================================
+   81 — LIVE PREVIEW LINKS
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-link,
+.markdown-source-view.mod-cm6
+.cm-url {
+
+  color: var(--eng-primary);
+}
+
+
+/* =========================================================
+   82 — LIVE PREVIEW FORMATTING
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-strong {
+
+  color: var(--eng-text-bright);
+  font-weight: 700;
+}
+
+.markdown-source-view.mod-cm6
+.cm-em {
+
+  color: var(--eng-quote);
+}
+
+
+/* =========================================================
+   83 — INLINE CODE
+   ========================================================= */
+
+.markdown-preview-view code {
+
+  color: var(--eng-primary);
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 7%,
+      var(--eng-panel)
+    );
+
+  border: 1px solid var(--eng-border);
+
+  border-radius: 3px;
+
+  padding:
+    0.12em
+    0.35em;
+
+  font-family: var(--eng-font-mono);
+  font-size: 0.9em;
+}
+
+
+/* =========================================================
+   84 — CODE BLOCK
+   ========================================================= */
+
+.markdown-preview-view pre {
+
+  background: var(--eng-panel);
+
+  border: 1px solid var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  box-shadow: var(--eng-shadow-sm);
+
+  padding: 18px;
+}
+
+
+/* =========================================================
+   85 — CODE BLOCK TEXT
+   ========================================================= */
+
+.markdown-preview-view pre code {
+
+  background: transparent;
+  border: 0;
+  padding: 0;
+
+  color: var(--eng-text);
+
+  font-size: 0.9em;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   86 — EDITOR EMBEDS
+   ========================================================= */
+
+.markdown-preview-view
+.markdown-embed {
+
+  background: var(--eng-panel);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  box-shadow:
+    var(--eng-shadow-sm);
+}
+
+
+/* =========================================================
+   87 — BLOCKQUOTES
+   ========================================================= */
+
+.markdown-preview-view blockquote {
+
+  margin-left: 0;
+  margin-right: 0;
+
+  padding:
+    12px
+    18px;
+
+  border-left:
+    3px solid
+    var(--eng-primary);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 4%,
+      var(--eng-editor)
+    );
+
+  color: var(--eng-quote);
+}
+
+
+/* =========================================================
+   88 — DISCIPLINE BLOCKQUOTE WORLDS
+   ========================================================= */
+
+body.engineering-foundation
+.markdown-preview-view blockquote {
+
+  border-left-style: solid;
+}
+
+body.engineering-circuit
+.markdown-preview-view blockquote {
+
+  border-left-style: dashed;
+}
+
+body.engineering-catalyst
+.markdown-preview-view blockquote {
+
+  border-left-width: 4px;
+  border-radius: 7px;
+}
+
+body.engineering-machina
+.markdown-preview-view blockquote {
+
+  border-left-width: 5px;
+}
+
+body.engineering-kinematics
+.markdown-preview-view blockquote {
+
+  border-left-style: double;
+}
+
+body.engineering-mission-control
+.markdown-preview-view blockquote {
+
+  border-left-width: 3px;
+}
+
+body.engineering-kernel
+.markdown-preview-view blockquote {
+
+  border-left-style: dashed;
+  font-family: var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   89 — EDITOR SCROLLBAR
+   ========================================================= */
+
+.markdown-source-view.mod-cm6 .cm-scroller::-webkit-scrollbar,
+.markdown-preview-view::-webkit-scrollbar {
+
+  width: 10px;
+  height: 10px;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller::-webkit-scrollbar-thumb,
+.markdown-preview-view::-webkit-scrollbar-thumb {
+
+  background: var(--eng-border);
+  border-radius: 10px;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller::-webkit-scrollbar-thumb:hover,
+.markdown-preview-view::-webkit-scrollbar-thumb:hover {
+
+  background: var(--eng-primary);
+}
+
+
+/* =========================================================
+   90 — EDITOR EMPTY STATE
+   ========================================================= */
+
+.empty-state {
+
+  background: var(--eng-editor);
+  color: var(--eng-text-muted);
+}
+
+.empty-state-title {
+
+  color: var(--eng-text-bright);
+}
+
+
+/* =========================================================
+   91 — MODALS
+   ========================================================= */
+
+.modal-container {
+
+  background:
+    rgba(0, 0, 0, 0.42);
+}
+
+.modal {
+
+  background: var(--eng-modal);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  box-shadow:
+    var(--eng-shadow-lg);
+
+  color: var(--eng-text);
+}
+
+
+/* =========================================================
+   92 — MODAL TITLE
+   ========================================================= */
+
+.modal-title {
+
+  color: var(--eng-text-bright);
+
+  font-family: var(--eng-font-heading);
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   93 — POPUPS
+   ========================================================= */
+
+.popover,
+.menu,
+.suggestion-container {
+
+  background: var(--eng-panel-raised);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  box-shadow:
+    var(--eng-shadow-md);
+
+  color: var(--eng-text);
+}
+
+
+/* =========================================================
+   94 — MENU ITEMS
+   ========================================================= */
+
+.menu-item,
+.suggestion-item {
+
+  color: var(--eng-text);
+
+  border-radius:
+    calc(var(--eng-component-radius) - 1px);
+}
+
+.menu-item:hover,
+.suggestion-item:hover {
+
+  background: var(--eng-hover);
+  color: var(--eng-text-bright);
+}
+
+
+/* =========================================================
+   95 — SELECTED MENU ITEM
+   ========================================================= */
+
+.menu-item.selected,
+.suggestion-item.is-selected {
+
+  background: var(--eng-active);
+  color: var(--eng-text-bright);
+
+  box-shadow:
+    inset 2px 0 0 var(--eng-primary);
+}
+
+
+/* =========================================================
+   96 — SEARCH INPUT
+   ========================================================= */
+
+input[type="search"],
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+
+  background: var(--eng-editor);
+
+  color: var(--eng-text);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+}
+
+
+/* =========================================================
+   97 — INPUT FOCUS
+   ========================================================= */
+
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+
+  border-color: var(--eng-primary);
+
+  box-shadow:
+    0 0 0 2px var(--eng-glow);
+
+  outline: none;
+}
+
+
+/* =========================================================
+   98 — BUTTONS
+   ========================================================= */
+
+button {
+
+  background: var(--eng-panel);
+  color: var(--eng-text);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+}
+
+
+/* =========================================================
+   99 — BUTTON HOVER
+   ========================================================= */
+
+button:hover {
+
+  background: var(--eng-hover);
+  border-color: var(--eng-border-strong);
+  color: var(--eng-text-bright);
+}
+
+
+/* =========================================================
+   100 — CTA BUTTON
+   ========================================================= */
+
+button.mod-cta {
+
+  background: var(--eng-primary);
+  color: var(--eng-background);
+
+  border-color: var(--eng-primary);
+}
+
+button.mod-cta:hover {
+
+  background: var(--eng-secondary);
+  border-color: var(--eng-secondary);
+}
+
+
+/* =========================================================
+   101 — DISCIPLINE BUTTON GEOMETRY
+   ========================================================= */
+
+body.engineering-circuit button {
+  border-radius: 2px;
+}
+
+body.engineering-catalyst button {
+  border-radius: 8px;
+}
+
+body.engineering-machina button {
+  border-radius: 3px;
+}
+
+body.engineering-kernel button {
+  font-family: var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   102 — TOOLTIPS
+   ========================================================= */
+
+.tooltip {
+
+  background: var(--eng-panel-raised);
+  color: var(--eng-text-bright);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  box-shadow:
+    var(--eng-shadow-sm);
+}
+
+
+/* =========================================================
+   103 — CHECKBOX FOUNDATION
+   ========================================================= */
+
+input[type="checkbox"] {
+
+  accent-color: var(--eng-primary);
+}
+
+
+/* =========================================================
+   104 — DROPDOWNS
+   ========================================================= */
+
+select {
+
+  background: var(--eng-panel);
+  color: var(--eng-text);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+}
+
+
+/* =========================================================
+   105 — SLIDERS
+   ========================================================= */
+
+input[type="range"] {
+
+  accent-color: var(--eng-primary);
+}
+
+
+/* =========================================================
+   106 — DRAGGING
+   ========================================================= */
+
+.is-dragging {
+
+  opacity: 0.82;
+}
+
+
+/* =========================================================
+   107 — DISCIPLINE ATMOSPHERE
+   ========================================================= */
+
+body.engineering-foundation .workspace-tab-header.is-active {
+  box-shadow:
+    inset 0 -2px 0 var(--eng-primary),
+    0 0 8px var(--eng-glow);
+}
+
+body.engineering-circuit .workspace-tab-header.is-active {
+  box-shadow:
+    inset 0 -2px 0 var(--eng-primary),
+    0 0 14px var(--eng-glow);
+}
+
+body.engineering-catalyst .workspace-tab-header.is-active {
+  box-shadow:
+    inset 0 -2px 0 var(--eng-primary),
+    0 3px 14px var(--eng-glow);
+}
+
+body.engineering-machina .workspace-tab-header.is-active {
+  box-shadow:
+    inset 0 -3px 0 var(--eng-primary);
+}
+
+body.engineering-kinematics .workspace-tab-header.is-active {
+  box-shadow:
+    inset 0 -2px 0 var(--eng-primary),
+    4px 0 12px var(--eng-glow);
+}
+
+body.engineering-mission-control .workspace-tab-header.is-active {
+  box-shadow:
+    inset 0 -2px 0 var(--eng-primary),
+    0 0 10px var(--eng-glow);
+}
+
+body.engineering-kernel .workspace-tab-header.is-active {
+  box-shadow:
+    inset 0 -2px 0 var(--eng-primary);
+}
+
+
+/* =========================================================
+   108 — FULL WORKSPACE DISCIPLINE TRANSITION
+   ========================================================= */
+
+.workspace,
+.workspace-ribbon,
+.workspace-tab-header,
+.view-header,
+.nav-header,
+.nav-file-title,
+.nav-folder-title,
+.status-bar,
+.markdown-preview-view,
+.markdown-source-view,
+.modal,
+.menu,
+.popover,
+.callout,
+.canvas-node {
+
+  transition:
+    background-color var(--eng-transition-normal),
+    border-color var(--eng-transition-normal),
+    color var(--eng-transition-normal),
+    box-shadow var(--eng-transition-normal);
+}
+
+
+/* =========================================================
+   109 — MOBILE FOUNDATION
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .markdown-preview-view .markdown-preview-sizer {
+
+    max-width: none;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .markdown-source-view.mod-cm6 .cm-content {
+
+    max-width: none;
+
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .workspace-tab-header {
+
+    min-height: 40px;
+  }
+
+  .nav-file-title,
+  .nav-folder-title {
+
+    min-height: 36px;
+  }
+}
+
+
+/* =========================================================
+   END PART 2 / 4
+   ========================================================= */
+   /* =========================================================
+   ENGINEERING OBSIDIAN THEME
+   CORRECTED VERSION — PART 3 / 4
+
+   PART 3:
+   - Editor
+   - Reading View
+   - Live Preview
+   - Source Mode
+   - Headings
+   - Paragraphs
+   - Lists
+   - Links
+   - Tables
+   - Blockquotes
+   - Code
+   - Embeds
+   - Checklists
+   - Properties
+   - Editor-specific discipline worlds
+   ========================================================= */
+
+
+/* =========================================================
+   110 — EDITOR VARIABLES
+   ========================================================= */
+
+body.engineering-foundation,
+body.engineering-circuit,
+body.engineering-catalyst,
+body.engineering-machina,
+body.engineering-kinematics,
+body.engineering-mission-control,
+body.engineering-kernel {
+
+  --eng-editor-padding: 32px;
+  --eng-paragraph-spacing: 1.05em;
+  --eng-heading-spacing: 1.7em;
+
+  --eng-selection:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 24%,
+      transparent
+    );
+
+  --eng-code-bg:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 4%,
+      var(--eng-panel)
+    );
+}
+
+
+/* =========================================================
+   111 — READING VIEW ROOT
+   ========================================================= */
+
+.markdown-preview-view {
+
+  background: var(--eng-editor);
+
+  color: var(--eng-text);
+
+  font-family:
+    var(--eng-font-body);
+
+  font-size:
+    var(--eng-reading-font-size);
+
+  line-height:
+    var(--eng-reading-line-height);
+
+  letter-spacing: 0.005em;
+}
+
+
+/* =========================================================
+   112 — READING CONTAINER
+   ========================================================= */
+
+.markdown-preview-view
+.markdown-preview-sizer {
+
+  max-width:
+    var(--eng-reading-width);
+
+  margin:
+    0 auto;
+
+  padding:
+    42px
+    var(--eng-editor-padding)
+    140px;
+}
+
+
+/* =========================================================
+   113 — DOCUMENT CONTENT
+   ========================================================= */
+
+.markdown-preview-view
+.markdown-preview-section {
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   114 — PARAGRAPHS
+   ========================================================= */
+
+.markdown-preview-view p {
+
+  margin-top: 0;
+
+  margin-bottom:
+    var(--eng-paragraph-spacing);
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   115 — FIRST PARAGRAPH
+   ========================================================= */
+
+.markdown-preview-view
+.markdown-preview-section > p:first-child {
+
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   116 — HEADINGS
+   ========================================================= */
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+
+  color:
+    var(--eng-text-bright);
+
+  font-family:
+    var(--eng-font-heading);
+
+  line-height: 1.25;
+
+  font-weight: 700;
+
+  margin-top:
+    var(--eng-heading-spacing);
+
+  margin-bottom:
+    0.55em;
+}
+
+
+/* =========================================================
+   117 — H1
+   ========================================================= */
+
+.markdown-preview-view h1 {
+
+  font-size: 2.25em;
+
+  letter-spacing:
+    -0.025em;
+
+  padding-bottom: 0.25em;
+
+  border-bottom:
+    1px solid
+    var(--eng-border);
+}
+
+
+/* =========================================================
+   118 — H2
+   ========================================================= */
+
+.markdown-preview-view h2 {
+
+  font-size: 1.7em;
+}
+
+
+/* =========================================================
+   119 — H3
+   ========================================================= */
+
+.markdown-preview-view h3 {
+
+  font-size: 1.4em;
+}
+
+
+/* =========================================================
+   120 — H4
+   ========================================================= */
+
+.markdown-preview-view h4 {
+
+  font-size: 1.18em;
+}
+
+
+/* =========================================================
+   121 — H5
+   ========================================================= */
+
+.markdown-preview-view h5 {
+
+  font-size: 1em;
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   122 — H6
+   ========================================================= */
+
+.markdown-preview-view h6 {
+
+  font-size: 0.9em;
+
+  color:
+    var(--eng-text-muted);
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    0.06em;
+}
+
+
+/* =========================================================
+   123 — FOUNDATION HEADINGS
+   ========================================================= */
+
+body.engineering-foundation
+.markdown-preview-view h1 {
+
+  border-bottom:
+    2px solid
+    var(--eng-primary);
+}
+
+body.engineering-foundation
+.markdown-preview-view h2 {
+
+  border-left:
+    3px solid
+    var(--eng-primary);
+
+  padding-left:
+    12px;
+}
+
+
+/* =========================================================
+   124 — CIRCUIT HEADINGS
+   ========================================================= */
+
+body.engineering-circuit
+.markdown-preview-view h1 {
+
+  font-family:
+    var(--eng-font-mono);
+
+  letter-spacing:
+    0.02em;
+}
+
+body.engineering-circuit
+.markdown-preview-view h2::before {
+
+  content: "> ";
+
+  color:
+    var(--eng-primary);
+
+  font-family:
+    var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   125 — CATALYST HEADINGS
+   ========================================================= */
+
+body.engineering-catalyst
+.markdown-preview-view h1,
+body.engineering-catalyst
+.markdown-preview-view h2 {
+
+  font-family:
+    var(--eng-font-heading);
+
+  font-weight:
+    600;
+}
+
+
+/* =========================================================
+   126 — MACHINA HEADINGS
+   ========================================================= */
+
+body.engineering-machina
+.markdown-preview-view h1,
+body.engineering-machina
+.markdown-preview-view h2 {
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    0.035em;
+}
+
+
+/* =========================================================
+   127 — KINEMATICS HEADINGS
+   ========================================================= */
+
+body.engineering-kinematics
+.markdown-preview-view h2::before {
+
+  content: "→";
+
+  color:
+    var(--eng-primary);
+
+  margin-right:
+    9px;
+}
+
+
+/* =========================================================
+   128 — MISSION CONTROL HEADINGS
+   ========================================================= */
+
+body.engineering-mission-control
+.markdown-preview-view h2::before {
+
+  content:
+    "SYS";
+
+  color:
+    var(--eng-primary);
+
+  font-family:
+    var(--eng-font-mono);
+
+  font-size:
+    0.5em;
+
+  letter-spacing:
+    0.08em;
+
+  margin-right:
+    10px;
+}
+
+
+/* =========================================================
+   129 — KERNEL HEADINGS
+   ========================================================= */
+
+body.engineering-kernel
+.markdown-preview-view h1,
+body.engineering-kernel
+.markdown-preview-view h2,
+body.engineering-kernel
+.markdown-preview-view h3 {
+
+  font-family:
+    var(--eng-font-mono);
+
+  font-weight:
+    600;
+}
+
+body.engineering-kernel
+.markdown-preview-view h2::before {
+
+  content:
+    "$ ";
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   130 — LINKS
+   ========================================================= */
+
+.markdown-preview-view a {
+
+  color:
+    var(--eng-primary);
+
+  text-decoration:
+    none;
+
+  transition:
+    color var(--eng-transition-fast);
+}
+
+
+/* =========================================================
+   131 — LINK HOVER
+   ========================================================= */
+
+.markdown-preview-view a:hover {
+
+  color:
+    var(--eng-secondary);
+
+  text-decoration:
+    underline;
+
+  text-decoration-color:
+    var(--eng-primary);
+
+  text-underline-offset:
+    3px;
+}
+
+
+/* =========================================================
+   132 — INTERNAL LINKS
+   ========================================================= */
+
+.markdown-preview-view
+.internal-link {
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   133 — UNRESOLVED LINKS
+   ========================================================= */
+
+.markdown-preview-view
+.internal-link.is-unresolved {
+
+  color:
+    var(--eng-text-muted);
+
+  opacity:
+    0.8;
+}
+
+
+/* =========================================================
+   134 — EXTERNAL LINK ICON
+   ========================================================= */
+
+.external-link {
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   135 — BOLD
+   ========================================================= */
+
+.markdown-preview-view strong {
+
+  color:
+    var(--eng-text-bright);
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   136 — ITALIC
+   ========================================================= */
+
+.markdown-preview-view em {
+
+  color:
+    var(--eng-quote);
+}
+
+
+/* =========================================================
+   137 — STRIKETHROUGH
+   ========================================================= */
+
+.markdown-preview-view del {
+
+  color:
+    var(--eng-text-muted);
+
+  text-decoration-color:
+    var(--eng-error);
+}
+
+
+/* =========================================================
+   138 — HIGHLIGHT
+   ========================================================= */
+
+.markdown-preview-view mark {
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 22%,
+      transparent
+    );
+
+  color:
+    var(--eng-text-bright);
+
+  padding:
+    0.08em 0.2em;
+
+  border-radius:
+    2px;
+}
+
+
+/* =========================================================
+   139 — LISTS
+   ========================================================= */
+
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+
+  margin-top:
+    0.4em;
+
+  margin-bottom:
+    1em;
+
+  padding-left:
+    1.7em;
+}
+
+
+/* =========================================================
+   140 — LIST ITEMS
+   ========================================================= */
+
+.markdown-preview-view li {
+
+  margin-bottom:
+    0.35em;
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   141 — LIST MARKERS
+   ========================================================= */
+
+.markdown-preview-view
+li::marker {
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   142 — NESTED LIST
+   ========================================================= */
+
+.markdown-preview-view
+li li {
+
+  color:
+    var(--eng-text-muted);
+}
+
+
+/* =========================================================
+   143 — HORIZONTAL RULE
+   ========================================================= */
+
+.markdown-preview-view hr {
+
+  border: 0;
+
+  border-top:
+    1px solid
+    var(--eng-border);
+
+  margin:
+    2.5em 0;
+}
+
+
+/* =========================================================
+   144 — FOUNDATION HR
+   ========================================================= */
+
+body.engineering-foundation
+.markdown-preview-view hr {
+
+  border-top:
+    2px solid
+    var(--eng-border);
+}
+
+
+/* =========================================================
+   145 — CIRCUIT HR
+   ========================================================= */
+
+body.engineering-circuit
+.markdown-preview-view hr {
+
+  border-top:
+    1px dashed
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   146 — MACHINA HR
+   ========================================================= */
+
+body.engineering-machina
+.markdown-preview-view hr {
+
+  border-top:
+    3px double
+    var(--eng-border-strong);
+}
+
+
+/* =========================================================
+   147 — TABLE
+   ========================================================= */
+
+.markdown-preview-view table,
+.markdown-preview-view table thead,
+.markdown-preview-view table tbody,
+.markdown-preview-view table tr,
+.markdown-preview-view table th,
+.markdown-preview-view table td,
+.dataview.table-view-table,
+.dataview.table-view-table thead,
+.dataview.table-view-table tbody,
+.dataview.table-view-table tr,
+.dataview.table-view-table th,
+.dataview.table-view-table td {
+
+  background: var(--eng-panel) ;
+}
+
+
+/* ---------- TABLE ---------- */
+
+.markdown-preview-view table,
+.dataview.table-view-table {
+
+  width: 100%;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: var(--eng-panel) ;
+
+  border: 1px solid var(--eng-border);
+  border-radius: var(--eng-component-radius);
+
+  overflow: hidden;
+}
+
+
+/* ---------- ALL ROWS ---------- */
+
+.markdown-preview-view table tr,
+.markdown-preview-view table tbody tr,
+.markdown-preview-view table tbody tr:nth-child(odd),
+.markdown-preview-view table tbody tr:nth-child(even),
+.dataview.table-view-table tr,
+.dataview.table-view-table tbody tr,
+.dataview.table-view-table tbody tr:nth-child(odd),
+.dataview.table-view-table tbody tr:nth-child(even) {
+
+  background: var(--eng-panel) ;
+}
+
+
+/* ---------- CELLS ---------- */
+
+.markdown-preview-view table th,
+.markdown-preview-view table td,
+.dataview.table-view-table th,
+.dataview.table-view-table td {
+
+  background: var(--eng-panel) ;
+
+  color: var(--eng-text);
+
+  padding: 9px 12px;
+
+  border-bottom: 1px solid var(--eng-border);
+}
+
+
+/* ---------- HEADER ---------- */
+
+.markdown-preview-view table th,
+.dataview.table-view-table th {
+
+  color: var(--eng-text-bright);
+
+  font-weight: 700;
+}
+
+
+/* ---------- HOVER — NO COLOR CHANGE ---------- */
+
+.markdown-preview-view table tbody tr:hover,
+.markdown-preview-view table tbody tr:hover th,
+.markdown-preview-view table tbody tr:hover td,
+.dataview.table-view-table tbody tr:hover,
+.dataview.table-view-table tbody tr:hover th,
+.dataview.table-view-table tbody tr:hover td {
+
+  background: var(--eng-panel) ;
+}
+
+/* =========================================================
+   154 — BLOCKQUOTE
+   ========================================================= */
+
+.markdown-preview-view blockquote {
+
+  margin:
+    1.5em 0;
+
+  padding:
+    13px 18px;
+
+  border-left:
+    3px solid
+    var(--eng-primary);
+
+  background:
+    var(--eng-code-bg);
+
+  color:
+    var(--eng-quote);
+
+  border-radius:
+    0 var(--eng-component-radius)
+    var(--eng-component-radius) 0;
+}
+
+
+/* =========================================================
+   155 — BLOCKQUOTE PARAGRAPH
+   ========================================================= */
+
+.markdown-preview-view blockquote p {
+
+  margin-bottom:
+    0.6em;
+}
+
+/* =========================================================
+   156 — INLINE CODE
+   ========================================================= */
+
+.markdown-preview-view code,
+.cm-inline-code {
+
+  font-family:
+    var(--eng-font-mono);
+
+  color:
+    var(--eng-primary);
+
+  background:
+    var(--eng-code-bg) ;
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    3px;
+
+  padding:
+    0.1em 0.32em;
+}
+/* =========================================================
+   157 — CODE BLOCK
+   ========================================================= */
+
+.markdown-preview-view pre {
+
+  background: var(--eng-code-bg) ;
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  padding:
+    18px;
+
+  margin:
+    1.5em 0;
+
+  overflow:
+    auto;
+
+  box-shadow:
+    var(--eng-shadow-sm);
+}
+
+
+/* =========================================================
+   158 — CODE BLOCK CODE
+   ========================================================= */
+
+.markdown-preview-view pre code {
+
+  background: transparent ;
+
+  border: none;
+
+  color: var(--eng-text);
+
+  padding: 0;
+
+  font-size: 0.88em;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   159 — KERNEL CODE
+   ========================================================= */
+
+body.engineering-kernel
+.markdown-preview-view pre {
+
+  border-left:
+    3px solid
+    var(--eng-primary);
+}
+
+body.engineering-kernel
+.markdown-preview-view pre code {
+
+  font-family:
+    var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   160 — TASK CHECKBOX
+   ========================================================= */
+
+.markdown-preview-view
+.task-list-item-checkbox {
+
+  appearance:
+    none;
+
+  width:
+    16px;
+
+  height:
+    16px;
+
+  margin-right:
+    7px;
+
+  vertical-align:
+    -2px;
+
+  border:
+    1px solid
+    var(--eng-border-strong);
+
+  border-radius:
+    3px;
+
+  background:
+    var(--eng-panel);
+
+  cursor:
+    pointer;
+}
+
+
+/* =========================================================
+   161 — CHECKED CHECKBOX
+   ========================================================= */
+
+.markdown-preview-view
+.task-list-item-checkbox:checked {
+
+  background:
+    var(--eng-primary);
+
+  border-color:
+    var(--eng-primary);
+
+  box-shadow:
+    0 0 7px
+    var(--eng-glow);
+}
+
+
+/* =========================================================
+   162 — COMPLETED TASK
+   ========================================================= */
+
+.markdown-preview-view
+.task-list-item[data-task="x"] {
+
+  color:
+    var(--eng-text-muted);
+
+  text-decoration:
+    line-through;
+
+  text-decoration-color:
+    var(--eng-border-strong);
+}
+
+
+/* =========================================================
+   163 — IMAGE
+   ========================================================= */
+
+.markdown-preview-view img {
+
+  max-width:
+    100%;
+
+  height:
+    auto;
+
+  border-radius:
+    var(--eng-component-radius);
+
+  border:
+    1px solid
+    var(--eng-border);
+}
+
+
+/* =========================================================
+   164 — IMAGE HOVER
+   ========================================================= */
+
+.markdown-preview-view img:hover {
+
+  border-color:
+    var(--eng-primary);
+
+  box-shadow:
+    0 0 18px
+    var(--eng-glow);
+}
+
+
+/* =========================================================
+   165 — EMBEDS
+   ========================================================= */
+
+.markdown-preview-view
+.markdown-embed {
+
+  background:
+    var(--eng-panel);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  padding:
+    8px;
+}
+
+
+/* =========================================================
+   166 — EMBED TITLE
+   ========================================================= */
+
+.markdown-preview-view
+.markdown-embed-title {
+
+  color:
+    var(--eng-primary);
+
+  font-family:
+    var(--eng-font-heading);
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   167 — INLINE TITLE
+   ========================================================= */
+
+.inline-title {
+
+  color:
+    var(--eng-text-bright);
+
+  font-family:
+    var(--eng-font-heading);
+
+  font-size:
+    2.3em;
+
+  font-weight:
+    750;
+
+  line-height:
+    1.15;
+
+  margin-bottom:
+    0.5em;
+}
+
+
+/* =========================================================
+   168 — FOUNDATION INLINE TITLE
+   ========================================================= */
+
+body.engineering-foundation
+.inline-title {
+
+  border-bottom:
+    2px solid
+    var(--eng-primary);
+
+  padding-bottom:
+    0.2em;
+}
+
+
+/* =========================================================
+   169 — CIRCUIT INLINE TITLE
+   ========================================================= */
+
+body.engineering-circuit
+.inline-title {
+
+  font-family:
+    var(--eng-font-mono);
+
+  letter-spacing:
+    0.02em;
+}
+
+
+/* =========================================================
+   170 — CATALYST INLINE TITLE
+   ========================================================= */
+
+body.engineering-catalyst
+.inline-title {
+
+  font-weight:
+    600;
+}
+
+
+/* =========================================================
+   171 — MACHINA INLINE TITLE
+   ========================================================= */
+
+body.engineering-machina
+.inline-title {
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    0.04em;
+}
+
+
+/* =========================================================
+   172 — KINEMATICS INLINE TITLE
+   ========================================================= */
+
+body.engineering-kinematics
+.inline-title::before {
+
+  content:
+    "→ ";
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   173 — MISSION CONTROL INLINE TITLE
+   ========================================================= */
+
+body.engineering-mission-control
+.inline-title::before {
+
+  content:
+    "MISSION // ";
+
+  color:
+    var(--eng-primary);
+
+  font-family:
+    var(--eng-font-mono);
+
+  font-size:
+    0.42em;
+
+  letter-spacing:
+    0.08em;
+}
+
+
+/* =========================================================
+   174 — KERNEL INLINE TITLE
+   ========================================================= */
+
+body.engineering-kernel
+.inline-title {
+
+  font-family:
+    var(--eng-font-mono);
+
+  font-size:
+    1.75em;
+}
+
+body.engineering-kernel
+.inline-title::before {
+
+  content:
+    "$ ";
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   175 — SOURCE MODE
+   ========================================================= */
+
+.markdown-source-view.mod-cm6 {
+
+  background:
+    var(--eng-editor);
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   176 — CODEMIRROR CONTENT
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-content {
+
+  font-family:
+    var(--eng-font-body);
+
+  font-size:
+    var(--eng-reading-font-size);
+
+  line-height:
+    var(--eng-reading-line-height);
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   177 — CODEMIRROR GUTTERS
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-gutters {
+
+  background:
+    var(--eng-editor);
+
+  color:
+    var(--eng-text-faint);
+
+  border-right:
+    1px solid
+    var(--eng-border);
+}
+
+
+/* =========================================================
+   178 — CODEMIRROR LINE NUMBERS
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-lineNumbers {
+
+  font-family:
+    var(--eng-font-mono);
+
+  font-size:
+    0.75em;
+}
+
+
+/* =========================================================
+   179 — ACTIVE LINE
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-activeLine {
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 4%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   180 — ACTIVE GUTTER
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-activeLineGutter {
+
+  color:
+    var(--eng-primary);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 7%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   181 — CURSOR
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-cursor {
+
+  border-left:
+    2px solid
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   182 — SELECTION
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-selectionBackground {
+
+  background:
+    var(--eng-selection);
+}
+
+
+/* =========================================================
+   183 — LIVE PREVIEW HEADERS
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-header-1,
+.markdown-source-view.mod-cm6
+.cm-header-2,
+.markdown-source-view.mod-cm6
+.cm-header-3,
+.markdown-source-view.mod-cm6
+.cm-header-4,
+.markdown-source-view.mod-cm6
+.cm-header-5,
+.markdown-source-view.mod-cm6
+.cm-header-6 {
+
+  color:
+    var(--eng-text-bright);
+
+  font-family:
+    var(--eng-font-heading);
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   184 — LIVE PREVIEW LINKS
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-link {
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   185 — LIVE PREVIEW URL
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-url {
+
+  color:
+    var(--eng-secondary);
+}
+
+
+/* =========================================================
+   186 — LIVE PREVIEW BOLD
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-strong {
+
+  color:
+    var(--eng-text-bright);
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   187 — LIVE PREVIEW ITALIC
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-em {
+
+  color:
+    var(--eng-quote);
+}
+
+
+/* =========================================================
+   188 — LIVE PREVIEW CODE
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-inline-code {
+
+  color:
+    var(--eng-primary);
+
+  background:
+    var(--eng-code-bg);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    3px;
+
+  padding:
+    0.1em 0.3em;
+
+  font-family:
+    var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   189 — LIVE PREVIEW BLOCKQUOTE
+   ========================================================= */
+
+.markdown-source-view.mod-cm6
+.cm-quote {
+
+  color:
+    var(--eng-quote);
+}
+
+
+/* =========================================================
+   190 — SOURCE MODE DISCIPLINES
+   ========================================================= */
+
+body.engineering-circuit
+.markdown-source-view.mod-cm6 {
+
+  --eng-reading-font-size:
+    16px;
+}
+
+body.engineering-kernel
+.markdown-source-view.mod-cm6 {
+
+  --eng-reading-font-size:
+    15px;
+
+  font-family:
+    var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   191 — READING WIDTH BY WORLD
+   ========================================================= */
+
+body.engineering-foundation {
+  --eng-reading-width: 850px;
+}
+
+body.engineering-circuit {
+  --eng-reading-width: 900px;
+}
+
+body.engineering-catalyst {
+  --eng-reading-width: 820px;
+}
+
+body.engineering-machina {
+  --eng-reading-width: 880px;
+}
+
+body.engineering-kinematics {
+  --eng-reading-width: 850px;
+}
+
+body.engineering-mission-control {
+  --eng-reading-width: 900px;
+}
+
+body.engineering-kernel {
+  --eng-reading-width: 920px;
+}
+
+
+/* =========================================================
+   192 — READING FONT SIZE BY WORLD
+   ========================================================= */
+
+body.engineering-foundation {
+  --eng-reading-font-size: 17px;
+}
+
+body.engineering-circuit {
+  --eng-reading-font-size: 16px;
+}
+
+body.engineering-catalyst {
+  --eng-reading-font-size: 17px;
+}
+
+body.engineering-machina {
+  --eng-reading-font-size: 16px;
+}
+
+body.engineering-kinematics {
+  --eng-reading-font-size: 17px;
+}
+
+body.engineering-mission-control {
+  --eng-reading-font-size: 16px;
+}
+
+body.engineering-kernel {
+  --eng-reading-font-size: 15px;
+}
+
+
+/* =========================================================
+   193 — LONG-FORM READING
+   ========================================================= */
+
+.markdown-preview-view
+.markdown-preview-sizer > * {
+
+  max-width:
+    100%;
+}
+
+
+/* =========================================================
+   194 — FOOTNOTES
+   ========================================================= */
+
+.markdown-preview-view
+.footnotes {
+
+  color:
+    var(--eng-text-muted);
+
+  border-top:
+    1px solid
+    var(--eng-border);
+
+  margin-top:
+    3em;
+
+  padding-top:
+    1.5em;
+}
+
+
+/* =========================================================
+   195 — FOOTNOTE LINKS
+   ========================================================= */
+
+.markdown-preview-view
+.footnotes a {
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   196 — TAGS IN READING VIEW
+   ========================================================= */
+
+.markdown-preview-view
+.tag {
+
+  color:
+    var(--eng-primary);
+
+  background:
+    var(--eng-active);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    999px;
+
+  padding:
+    2px 7px;
+
+  font-size:
+    0.78em;
+
+  text-decoration:
+    none;
+}
+
+
+/* =========================================================
+   197 — TAG HOVER
+   ========================================================= */
+
+.markdown-preview-view
+.tag:hover {
+
+  background:
+    var(--eng-hover);
+
+  border-color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   198 — INLINE FIELD
+   ========================================================= */
+
+.markdown-preview-view
+.dataview.inline-field {
+
+  color:
+    var(--eng-primary);
+
+  background:
+    var(--eng-code-bg);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    3px;
+
+  padding:
+    1px 5px;
+}
+
+
+/* =========================================================
+   199 — PROPERTIES CONTAINER
+   ========================================================= */
+
+.metadata-container {
+
+  background:
+    var(--eng-panel);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  margin-bottom:
+    1.5em;
+}
+
+
+/* =========================================================
+   200 — PROPERTIES TITLE
+   ========================================================= */
+
+.metadata-properties-heading {
+
+  color:
+    var(--eng-text-bright);
+
+  font-family:
+    var(--eng-font-heading);
+}
+
+
+/* =========================================================
+   201 — PROPERTY ROW
+   ========================================================= */
+
+.metadata-property {
+
+  background:
+    transparent;
+
+  border-bottom:
+    1px solid
+    var(--eng-border);
+}
+
+
+/* =========================================================
+   202 — PROPERTY KEY
+   ========================================================= */
+
+.metadata-property-key {
+
+  color:
+    var(--eng-text-muted);
+
+  font-family:
+    var(--eng-font-mono);
+
+  font-size:
+    0.78em;
+}
+
+
+/* =========================================================
+   203 — PROPERTY VALUE
+   ========================================================= */
+
+.metadata-property-value {
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   204 — PROPERTY VALUE HOVER
+   ========================================================= */
+
+.metadata-property:hover {
+
+  background:
+    var(--eng-hover);
+}
+
+
+/* =========================================================
+   205 — EDITOR FOCUS
+   ========================================================= */
+
+.markdown-source-view.mod-cm6:focus-within {
+
+  box-shadow:
+    inset 0 0 0 1px
+    color-mix(
+      in srgb,
+      var(--eng-primary) 8%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   206 — DISCIPLINE-SPECIFIC EDITOR EDGE
+   ========================================================= */
+
+body.engineering-foundation
+.markdown-source-view.mod-cm6 {
+
+  border-top:
+    2px solid
+    var(--eng-border);
+}
+
+body.engineering-circuit
+.markdown-source-view.mod-cm6 {
+
+  border-top:
+    1px dashed
+    var(--eng-primary);
+}
+
+body.engineering-catalyst
+.markdown-source-view.mod-cm6 {
+
+  border-top:
+    2px solid
+    var(--eng-border);
+}
+
+body.engineering-machina
+.markdown-source-view.mod-cm6 {
+
+  border-top:
+    3px double
+    var(--eng-border-strong);
+}
+
+body.engineering-kinematics
+.markdown-source-view.mod-cm6 {
+
+  border-top:
+    1px solid
+    var(--eng-primary);
+}
+
+body.engineering-mission-control
+.markdown-source-view.mod-cm6 {
+
+  border-top:
+    2px solid
+    var(--eng-primary);
+}
+
+body.engineering-kernel
+.markdown-source-view.mod-cm6 {
+
+  border-top:
+    1px dashed
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   207 — MOBILE READING
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .markdown-preview-view
+  .markdown-preview-sizer {
+
+    padding:
+      28px
+      18px
+      100px;
+  }
+
+  .markdown-preview-view h1 {
+
+    font-size:
+      1.8em;
+  }
+
+  .markdown-preview-view h2 {
+
+    font-size:
+      1.45em;
+  }
+
+  .markdown-preview-view h3 {
+
+    font-size:
+      1.2em;
+  }
+
+  .markdown-preview-view table {
+
+    display:
+      block;
+
+    overflow-x:
+      auto;
+  }
+
+  .inline-title {
+
+    font-size:
+      1.8em;
+  }
+}
+
+
+/* =========================================================
+   END PART 3 / 4
+   ========================================================= */
+   /* =========================================================
+   ENGINEERING OBSIDIAN THEME
+   PART 4 / 4
+
+   FINAL LAYER:
+   - Navigation
+   - Sidebar
+   - Icons
+   - Folder styling
+   - Callouts
+   - Properties
+   - Tags
+   - Search
+   - Backlinks
+   - Outgoing links
+   - Tasks
+   - Dataview
+   - Calendar
+   - Kanban
+   - Graph
+   - Canvas
+   - Excalidraw
+   - Mobile
+   - Atmosphere
+   - Accessibility
+   ========================================================= */
+
+
+/* =========================================================
+   208 — NAVIGATION
+   ========================================================= */
+
+.nav-files-container {
+
+  padding:
+    8px;
+}
+
+.nav-file-title,
+.nav-folder-title {
+
+  min-height:
+    30px;
+
+  padding:
+    5px 8px;
+
+  color:
+    var(--eng-text);
+
+  border-radius:
+    var(--eng-component-radius);
+}
+
+
+/* =========================================================
+   209 — NAVIGATION INDENT
+   ========================================================= */
+
+.nav-folder-children {
+
+  border-left:
+    1px solid
+    var(--eng-border);
+
+  margin-left:
+    8px;
+
+  padding-left:
+    4px;
+}
+
+
+/* =========================================================
+   210 — ACTIVE FILE
+   ========================================================= */
+
+.nav-file-title.is-active {
+
+  background:
+    var(--eng-active);
+
+  color:
+    var(--eng-text-bright);
+
+  box-shadow:
+    inset 3px 0
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   211 — FOLDER
+   ========================================================= */
+
+.nav-folder-title {
+
+  font-weight:
+    650;
+}
+
+.nav-folder-title-content {
+
+  color:
+    var(--eng-text-bright);
+}
+
+
+/* =========================================================
+   212 — FOLDER HOVER
+   ========================================================= */
+
+.nav-folder-title:hover {
+
+  background:
+    var(--eng-hover);
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   213 — FILE HOVER
+   ========================================================= */
+
+.nav-file-title:hover {
+
+  background:
+    var(--eng-hover);
+
+  color:
+    var(--eng-text-bright);
+}
+
+
+/* =========================================================
+   214 — NAVIGATION WORLD: FOUNDATION
+   ========================================================= */
+
+body.engineering-foundation
+.nav-folder-title {
+
+  border-left:
+    2px solid
+    transparent;
+}
+
+body.engineering-foundation
+.nav-folder-title:hover {
+
+  border-left-color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   215 — NAVIGATION WORLD: CIRCUIT
+   ========================================================= */
+
+body.engineering-circuit
+.nav-folder-title {
+
+  font-family:
+    var(--eng-font-mono);
+
+  letter-spacing:
+    0.02em;
+}
+
+body.engineering-circuit
+.nav-folder-title::before {
+
+  content:
+    "▸";
+
+  color:
+    var(--eng-primary);
+
+  margin-right:
+    7px;
+}
+
+
+/* =========================================================
+   216 — NAVIGATION WORLD: CATALYST
+   ========================================================= */
+
+body.engineering-catalyst
+.nav-folder-title {
+
+  border-radius:
+    8px;
+}
+
+
+/* =========================================================
+   217 — NAVIGATION WORLD: MACHINA
+   ========================================================= */
+
+body.engineering-machina
+.nav-folder-title {
+
+  text-transform:
+    uppercase;
+
+  font-family:
+    var(--eng-font-mono);
+
+  letter-spacing:
+    0.05em;
+}
+
+
+/* =========================================================
+   218 — NAVIGATION WORLD: KINEMATICS
+   ========================================================= */
+
+body.engineering-kinematics
+.nav-folder-title::before {
+
+  content:
+    "→";
+
+  color:
+    var(--eng-primary);
+
+  margin-right:
+    7px;
+}
+
+
+/* =========================================================
+   219 — NAVIGATION WORLD: MISSION CONTROL
+   ========================================================= */
+
+body.engineering-mission-control
+.nav-folder-title::before {
+
+  content:
+    "SYS";
+
+  color:
+    var(--eng-primary);
+
+  font-family:
+    var(--eng-font-mono);
+
+  font-size:
+    0.65em;
+
+  margin-right:
+    7px;
+}
+
+
+/* =========================================================
+   220 — NAVIGATION WORLD: KERNEL
+   ========================================================= */
+
+body.engineering-kernel
+.nav-folder-title,
+body.engineering-kernel
+.nav-file-title {
+
+  font-family:
+    var(--eng-font-mono);
+
+  font-size:
+    0.9em;
+}
+
+
+/* =========================================================
+   221 — ICON SYSTEM
+   ========================================================= */
+
+.clickable-icon,
+.svg-icon {
+
+  color:
+    var(--eng-text-muted);
+
+  transition:
+    color var(--eng-transition-fast),
+    transform var(--eng-transition-fast),
+    background-color var(--eng-transition-fast);
+}
+
+
+/* =========================================================
+   222 — ICON HOVER
+   ========================================================= */
+
+.clickable-icon:hover {
+
+  color:
+    var(--eng-primary);
+
+  background:
+    var(--eng-hover);
+}
+
+
+/* =========================================================
+   223 — ACTIVE ICON
+   ========================================================= */
+
+.clickable-icon.is-active {
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   224 — FOUNDATION ICONS
+   ========================================================= */
+
+body.engineering-foundation
+.workspace-ribbon .clickable-icon {
+
+  border-radius:
+    3px;
+}
+
+
+/* =========================================================
+   225 — CIRCUIT ICONS
+   ========================================================= */
+
+body.engineering-circuit
+.workspace-ribbon .clickable-icon {
+
+  border-radius:
+    0;
+
+  border:
+    1px solid
+    transparent;
+}
+
+body.engineering-circuit
+.workspace-ribbon .clickable-icon:hover {
+
+  border-color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   226 — CATALYST ICONS
+   ========================================================= */
+
+body.engineering-catalyst
+.workspace-ribbon .clickable-icon {
+
+  border-radius:
+    9px;
+}
+
+
+/* =========================================================
+   227 — MACHINA ICONS
+   ========================================================= */
+
+body.engineering-machina
+.workspace-ribbon .clickable-icon {
+
+  border-radius:
+    2px;
+
+  border:
+    1px solid
+    transparent;
+}
+
+
+/* =========================================================
+   228 — KINEMATICS ICONS
+   ========================================================= */
+
+body.engineering-kinematics
+.workspace-ribbon .clickable-icon:hover {
+
+  transform:
+    translateX(2px);
+}
+
+
+/* =========================================================
+   229 — MISSION CONTROL ICONS
+   ========================================================= */
+
+body.engineering-mission-control
+.workspace-ribbon .clickable-icon {
+
+  border-radius:
+    2px;
+
+  box-shadow:
+    inset 0 0 0 1px
+    color-mix(
+      in srgb,
+      var(--eng-border) 70%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   230 — KERNEL ICONS
+   ========================================================= */
+
+body.engineering-kernel
+.workspace-ribbon .clickable-icon {
+
+  border-radius:
+    0;
+
+  color:
+    var(--eng-text-muted);
+}
+
+
+/* =========================================================
+   231 — TAGS
+   ========================================================= */
+
+.tag {
+
+  color:
+    var(--eng-primary);
+
+  background:
+    var(--eng-active);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    999px;
+
+  padding:
+    2px 8px;
+
+  font-size:
+    0.78em;
+
+  text-decoration:
+    none;
+}
+
+
+/* =========================================================
+   232 — TAG HOVER
+   ========================================================= */
+
+.tag:hover {
+
+  color:
+    var(--eng-text-bright);
+
+  background:
+    var(--eng-hover);
+
+  border-color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   233 — CALLOUT BASE
+   ========================================================= */
+
+.callout {
+
+  --callout-color:
+    var(--eng-primary);
+
+  --callout-border-width:
+    1px;
+
+  --callout-radius:
+    var(--eng-component-radius);
+
+  --callout-padding:
+    14px 16px;
+
+  background:
+    color-mix(
+      in srgb,
+      var(--callout-color) 7%,
+      var(--eng-panel)
+    );
+
+  border:
+    var(--callout-border-width)
+    solid
+    color-mix(
+      in srgb,
+      var(--callout-color) 45%,
+      var(--eng-border)
+    );
+
+  border-radius:
+    var(--callout-radius);
+
+  color:
+    var(--eng-text);
+
+  box-shadow:
+    0 0 0
+    transparent;
+
+  margin:
+    1.2em 0;
+}
+
+
+/* =========================================================
+   234 — CALLOUT TITLE
+   ========================================================= */
+
+.callout-title {
+
+  color:
+    var(--callout-color);
+
+  font-family:
+    var(--eng-font-heading);
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   235 — CALLOUT CONTENT
+   ========================================================= */
+
+.callout-content {
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   236 — LORE
+   ========================================================= */
+
+.callout[data-callout="lore"] {
+
+  --callout-color:
+    var(--eng-secondary);
+
+  --callout-icon:
+    book-open;
+
+  font-family:
+    var(--eng-font-body);
+}
+
+
+/* =========================================================
+   237 — JOURNAL
+   ========================================================= */
+
+.callout[data-callout="journal"] {
+
+  --callout-color:
+    var(--eng-primary);
+
+  --callout-icon:
+    notebook-pen;
+}
+
+
+/* =========================================================
+   238 — SECRET
+   ========================================================= */
+
+.callout[data-callout="secret"] {
+
+  --callout-color:
+    var(--eng-warning);
+
+  --callout-icon:
+    lock;
+}
+
+
+/* =========================================================
+   239 — RESEARCH
+   ========================================================= */
+
+.callout[data-callout="research"] {
+
+  --callout-color:
+    var(--eng-primary);
+
+  --callout-icon:
+    microscope;
+}
+
+
+/* =========================================================
+   240 — QUEST
+   ========================================================= */
+
+.callout[data-callout="quest"] {
+
+  --callout-color:
+    var(--eng-secondary);
+
+  --callout-icon:
+    compass;
+}
+
+
+/* =========================================================
+   241 — ARTIFACT
+   ========================================================= */
+
+.callout[data-callout="artifact"] {
+
+  --callout-color:
+    var(--eng-warning);
+
+  --callout-icon:
+    box;
+}
+
+
+/* =========================================================
+   242 — IDEA
+   ========================================================= */
+
+.callout[data-callout="idea"] {
+
+  --callout-color:
+    var(--eng-secondary);
+
+  --callout-icon:
+    lightbulb;
+}
+
+
+/* =========================================================
+   243 — WARNING
+   ========================================================= */
+
+.callout[data-callout="warning"] {
+
+  --callout-color:
+    var(--eng-warning);
+
+  --callout-icon:
+    triangle-alert;
+}
+
+
+/* =========================================================
+   244 — SUCCESS
+   ========================================================= */
+
+.callout[data-callout="success"] {
+
+  --callout-color:
+    var(--eng-success);
+
+  --callout-icon:
+    check-circle;
+}
+
+
+/* =========================================================
+   245 — NOTE
+   ========================================================= */
+
+.callout[data-callout="note"] {
+
+  --callout-color:
+    var(--eng-primary);
+
+  --callout-icon:
+    info;
+}
+
+
+/* =========================================================
+   246 — CALLOUT GLOW
+   ========================================================= */
+
+.callout:hover {
+
+  box-shadow:
+    0 0 18px
+    color-mix(
+      in srgb,
+      var(--callout-color) 8%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   247 — CIRCUIT CALLOUTS
+   ========================================================= */
+
+body.engineering-circuit
+.callout {
+
+  border-radius:
+    2px;
+
+  border-left:
+    3px solid
+    var(--callout-color);
+
+  font-family:
+    var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   248 — CATALYST CALLOUTS
+   ========================================================= */
+
+body.engineering-catalyst
+.callout {
+
+  border-radius:
+    10px;
+
+  box-shadow:
+    0 8px 30px
+    color-mix(
+      in srgb,
+      var(--callout-color) 6%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   249 — MACHINA CALLOUTS
+   ========================================================= */
+
+body.engineering-machina
+.callout {
+
+  border-radius:
+    2px;
+
+  border-left:
+    5px solid
+    var(--callout-color);
+
+  text-transform:
+    none;
+}
+
+
+/* =========================================================
+   250 — KERNEL CALLOUTS
+   ========================================================= */
+
+body.engineering-kernel
+.callout {
+
+  border-radius:
+    0;
+
+  border-left:
+    2px dashed
+    var(--callout-color);
+
+  font-family:
+    var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   251 — SEARCH
+   ========================================================= */
+
+.search-result {
+
+  background:
+    var(--eng-panel);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  margin-bottom:
+    8px;
+}
+
+
+/* =========================================================
+   252 — SEARCH RESULT TITLE
+   ========================================================= */
+
+.search-result-file-title {
+
+  color:
+    var(--eng-text-bright);
+
+  font-family:
+    var(--eng-font-heading);
+}
+
+
+/* =========================================================
+   253 — SEARCH MATCH
+   ========================================================= */
+
+.search-result-file-matched-text {
+
+  color:
+    var(--eng-text);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 12%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   254 — SEARCH MATCH HIGHLIGHT
+   ========================================================= */
+
+.search-result-file-matched-text mark {
+
+  color:
+    var(--eng-text-bright);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-primary) 25%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   255 — BACKLINKS
+   ========================================================= */
+
+.backlink-pane,
+.outgoing-link-pane {
+
+  background:
+    var(--eng-panel);
+}
+
+
+/* =========================================================
+   256 — BACKLINK ITEM
+   ========================================================= */
+
+.tree-item-self {
+
+  color:
+    var(--eng-text);
+
+  border-radius:
+    var(--eng-component-radius);
+}
+
+.tree-item-self:hover {
+
+  background:
+    var(--eng-hover);
+
+  color:
+    var(--eng-text-bright);
+}
+
+
+/* =========================================================
+   257 — BACKLINK COUNT
+   ========================================================= */
+
+.tree-item-flair {
+
+  color:
+    var(--eng-primary);
+
+  font-family:
+    var(--eng-font-mono);
+}
+
+
+/* =========================================================
+   258 — OUTGOING LINKS
+   ========================================================= */
+
+.outgoing-link-pane
+.tree-item-self {
+
+  color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   259 — TASKS
+   ========================================================= */
+
+.task-list-item {
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   260 — TASK CHECKBOX
+   ========================================================= */
+
+.task-list-item-checkbox {
+
+  accent-color:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   261 — COMPLETED TASK
+   ========================================================= */
+
+.task-list-item[data-task="x"] {
+
+  color:
+    var(--eng-text-muted);
+
+  text-decoration:
+    line-through;
+}
+
+
+/* =========================================================
+   262 — DATAVIEW TABLE
+   ========================================================= */
+
+.dataview.table-view-table {
+
+  width:
+    100%;
+
+  border-collapse:
+    separate;
+
+  border-spacing:
+    0;
+
+  background:
+    var(--eng-panel);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  overflow:
+    hidden;
+}
+
+
+/* =========================================================
+   263 — DATAVIEW HEADER
+   ========================================================= */
+
+.dataview.table-view-table th {
+
+  background:
+    var(--eng-panel-raised);
+
+  color:
+    var(--eng-text-bright);
+
+  border-bottom:
+    1px solid
+    var(--eng-border);
+
+  padding:
+    9px 12px;
+}
+
+
+/* =========================================================
+   264 — DATAVIEW CELL
+   ========================================================= */
+
+.dataview.table-view-table td {
+
+  color:
+    var(--eng-text);
+
+  border-bottom:
+    1px solid
+    var(--eng-border);
+
+  padding:
+    8px 12px;
+}
+
+
+/* =========================================================
+   265 — DATAVIEW ROW HOVER
+   ========================================================= */
+
+.dataview.table-view-table tr:hover {
+
+  background:
+    var(--eng-hover);
+}
+
+
+/* =========================================================
+   266 — CALENDAR
+   ========================================================= */
+
+.calendar-container {
+
+  background:
+    var(--eng-panel);
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   267 — CALENDAR DAY
+   ========================================================= */
+
+.calendar-day {
+
+  color:
+    var(--eng-text);
+
+  border-radius:
+    var(--eng-component-radius);
+}
+
+
+/* =========================================================
+   268 — CALENDAR HOVER
+   ========================================================= */
+
+.calendar-day:hover {
+
+  background:
+    var(--eng-hover);
+
+  color:
+    var(--eng-text-bright);
+}
+
+
+/* =========================================================
+   269 — CALENDAR TODAY
+   ========================================================= */
+
+.calendar-day.today {
+
+  background:
+    var(--eng-active);
+
+  color:
+    var(--eng-primary);
+
+  box-shadow:
+    inset 0 0 0 1px
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   270 — KANBAN
+   ========================================================= */
+
+.kanban-plugin__board {
+
+  background:
+    var(--eng-editor);
+}
+
+
+/* =========================================================
+   271 — KANBAN COLUMN
+   ========================================================= */
+
+.kanban-plugin__lane {
+
+  background:
+    var(--eng-panel);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+}
+
+
+/* =========================================================
+   272 — KANBAN CARD
+   ========================================================= */
+
+.kanban-plugin__item {
+
+  background:
+    var(--eng-panel-raised);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  color:
+    var(--eng-text);
+
+  box-shadow:
+    var(--eng-shadow-sm);
+}
+
+
+/* =========================================================
+   273 — KANBAN CARD HOVER
+   ========================================================= */
+
+.kanban-plugin__item:hover {
+
+  border-color:
+    var(--eng-primary);
+
+  box-shadow:
+    0 0 15px
+    var(--eng-glow);
+}
+
+
+/* =========================================================
+   274 — GRAPH VIEW
+   ========================================================= */
+
+.graph-view-container {
+
+  background:
+    var(--eng-background);
+}
+
+
+/* =========================================================
+   275 — GRAPH CONTROLS
+   ========================================================= */
+
+.graph-controls {
+
+  background:
+    var(--eng-panel);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  box-shadow:
+    var(--eng-shadow-sm);
+}
+
+
+/* =========================================================
+   276 — GRAPH CONTROL INPUT
+   ========================================================= */
+
+.graph-controls input,
+.graph-controls select {
+
+  background:
+    var(--eng-editor);
+
+  color:
+    var(--eng-text);
+
+  border-color:
+    var(--eng-border);
+}
+
+
+/* =========================================================
+   277 — GRAPH DISCIPLINE IDENTITY
+   ========================================================= */
+
+body.engineering-foundation
+.graph-view-container {
+
+  --graph-node-unresolved: var(--eng-text-muted);
+}
+
+body.engineering-circuit
+.graph-view-container {
+
+  filter:
+    contrast(1.03);
+}
+
+body.engineering-catalyst
+.graph-view-container {
+
+  filter:
+    brightness(1.02);
+}
+
+body.engineering-machina
+.graph-view-container {
+
+  filter:
+    contrast(1.06);
+}
+
+body.engineering-kinematics
+.graph-view-container {
+
+  filter:
+    contrast(1.02);
+}
+
+body.engineering-mission-control
+.graph-view-container {
+
+  filter:
+    contrast(1.04);
+}
+
+body.engineering-kernel
+.graph-view-container {
+
+  filter:
+    contrast(1.07);
+}
+
+
+/* =========================================================
+   278 — CANVAS
+   ========================================================= */
+
+.canvas-wrapper {
+
+  background:
+    var(--eng-background);
+}
+
+
+/* =========================================================
+   279 — CANVAS NODE
+   ========================================================= */
+
+.canvas-node {
+
+  background:
+    var(--eng-panel);
+
+  border:
+    1px solid
+    var(--eng-border);
+
+  border-radius:
+    var(--eng-component-radius);
+
+  box-shadow:
+    var(--eng-shadow-md);
+
+  color:
+    var(--eng-text);
+}
+
+
+/* =========================================================
+   280 — CANVAS NODE HOVER
+   ========================================================= */
+
+.canvas-node:hover {
+
+  border-color:
+    var(--eng-primary);
+
+  box-shadow:
+    0 0 20px
+    var(--eng-glow);
+}
+
+
+/* =========================================================
+   281 — CANVAS NODE HEADER
+   ========================================================= */
+
+.canvas-node .canvas-node-label {
+
+  color:
+    var(--eng-text-bright);
+
+  font-family:
+    var(--eng-font-heading);
+}
+
+
+/* =========================================================
+   282 — CANVAS EDGE
+   ========================================================= */
+
+.canvas-edges path {
+
+  stroke:
+    var(--eng-border-strong);
+}
+
+
+/* =========================================================
+   283 — CANVAS EDGE ACTIVE
+   ========================================================= */
+
+.canvas-edges path:hover {
+
+  stroke:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   284 — EXCALIDRAW
+   ========================================================= */
+
+.excalidraw {
+
+  --color-primary:
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   285 — EXCALIDRAW PANEL
+   ========================================================= */
+
+.excalidraw .Island {
+
+  background:
+    var(--eng-panel) ;
+
+  border:
+    1px solid
+    var(--eng-border) ;
+}
+
+
+/* =========================================================
+   286 — MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .workspace-ribbon {
+
+    background:
+      var(--eng-panel);
+  }
+
+  .view-header {
+
+    min-height:
+      42px;
+  }
+
+  .nav-file-title,
+  .nav-folder-title {
+
+    min-height:
+      38px;
+
+    padding:
+      7px 9px;
+  }
+
+  .callout {
+
+    margin:
+      1em 0;
+  }
+
+  .kanban-plugin__board {
+
+    overflow-x:
+      auto;
+  }
+}
+
+
+/* =========================================================
+   287 — ATMOSPHERE
+   ========================================================= */
+
+.workspace,
+.workspace-ribbon,
+.view-header,
+.workspace-tab-header-container,
+.workspace-sidedock-vault-profile,
+.status-bar {
+
+  position:
+    relative;
+}
+
+
+/* =========================================================
+   288 — SUBTLE PANEL LIGHT
+   ========================================================= */
+
+.workspace-leaf-content {
+
+  background:
+    var(--eng-editor);
+}
+
+
+/* =========================================================
+   289 — GLASS PANELS
+   ========================================================= */
+
+body.engineering-glass-enabled
+.modal,
+body.engineering-glass-enabled
+.popover,
+body.engineering-glass-enabled
+.menu {
+
+  backdrop-filter:
+    blur(14px);
+
+  -webkit-backdrop-filter:
+    blur(14px);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--eng-panel) 86%,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   290 — SOFT GLOW
+   ========================================================= */
+
+body.engineering-glow-enabled
+.workspace-tab-header.is-active,
+body.engineering-glow-enabled
+.nav-file-title.is-active {
+
+  box-shadow:
+    0 0 14px
+    var(--eng-glow);
+}
+
+
+/* =========================================================
+   291 — NO EXCESSIVE GLOW
+   ========================================================= */
+
+body.engineering-glow-disabled
+.workspace-tab-header.is-active,
+body.engineering-glow-disabled
+.nav-file-title.is-active {
+
+  box-shadow:
+    inset 0 -2px 0
+    var(--eng-primary);
+}
+
+
+/* =========================================================
+   292 — ACCESSIBILITY
+   ========================================================= */
+
+body.engineering-accessibility-high {
+
+  --eng-text:
+    var(--eng-text-bright);
+
+  --eng-text-muted:
+    color-mix(
+      in srgb,
+      var(--eng-text-bright) 78%,
+      var(--eng-background)
+    );
+}
+
+
+/* =========================================================
+   293 — FOCUS INDICATORS
+   ========================================================= */
+
+*:focus-visible {
+
+  outline:
+    2px solid
+    var(--eng-primary);
+
+  outline-offset:
+    2px;
+}
+
+
+/* =========================================================
+   294 — REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+
+    animation-duration:
+      0.001ms ;
+
+    animation-iteration-count:
+      1 ;
+
+    transition-duration:
+      0.001ms ;
+
+    scroll-behavior:
+      auto ;
+  }
+}
+
+
+/* =========================================================
+   295 — PRINT
+   ========================================================= */
+
+@media print {
+
+  body {
+
+    background:
+      white;
+
+    color:
+      black;
+  }
+
+  .workspace-ribbon,
+  .workspace-tab-header-container,
+  .status-bar,
+  .view-header {
+
+    display:
+      none;
+  }
+
+  .markdown-preview-view {
+
+    background:
+      white;
+
+    color:
+      black;
+  }
+
+  .markdown-preview-view
+  .markdown-preview-sizer {
+
+    max-width:
+      850px;
+
+    padding:
+      0;
+  }
+}
+
+
+/* =========================================================
+   296 — FINAL CLEANUP
+   ========================================================= */
+
+.workspace-leaf,
+.workspace-leaf-content,
+.view-content {
+
+  min-width:
+    0;
+
+  min-height:
+    0;
+}
+
+
+/* =========================================================
+   297 — PREVENT OVERFLOW
+   ========================================================= */
+
+.markdown-preview-view,
+.markdown-source-view {
+
+  overflow-wrap:
+    break-word;
+}
+
+
+/* =========================================================
+   298 — DISCIPLINE WORLD FINAL IDENTIFIER
+   ========================================================= */
+
+body.engineering-foundation .status-bar-item:first-child::before {
+
+  content:
+    "FOUNDATION • ";
+}
+
+body.engineering-circuit .status-bar-item:first-child::before {
+
+  content:
+    "CIRCUIT • ";
+}
+
+body.engineering-catalyst .status-bar-item:first-child::before {
+
+  content:
+    "CATALYST • ";
+}
+
+body.engineering-machina .status-bar-item:first-child::before {
+
+  content:
+    "MACHINA • ";
+}
+
+body.engineering-kinematics .status-bar-item:first-child::before {
+
+  content:
+    "KINEMATICS • ";
+}
+
+body.engineering-mission-control .status-bar-item:first-child::before {
+
+  content:
+    "MISSION CONTROL • ";
+}
+
+body.engineering-kernel .status-bar-item:first-child::before {
+
+  content:
+    "KERNEL • ";
+}
+
+
+/* =========================================================
+   299 — FINAL ACCESSIBILITY CONTRAST
+   ========================================================= */
+
+.markdown-preview-view a,
+.markdown-preview-view .internal-link,
+.tag {
+
+  text-underline-offset:
+    3px;
+}
+
+
+/* =========================================================
+   300 — FINAL THEME END
+   ========================================================= */
+
+/*
+   ENGINEERING THEME COMPLETE
+
+   PART 1 = Variables + Discipline Engine
+   PART 2 = Application + Workspace
+   PART 3 = Editor + Reading + Markdown
+   PART 4 = Navigation + Plugins + Graph + Canvas +
+            Mobile + Atmosphere + Accessibility
+
+   IMPORTANT:
+   The Style Settings discipline selector should switch
+   the body discipline class/variables used by this theme.
+
+   Do NOT make discipline changes only by changing
+   --eng-primary.
+
+   Each discipline is intended to modify:
+   - typography
+   - geometry
+   - borders
+   - component shapes
+   - editor behaviour/appearance
+   - navigation appearance
+   - callouts
+   - code presentation
+   - graph/canvas atmosphere
+   - UI density
+   - visual language
+*/
+
+
+/* =========================================================
+   END PART 4 / 4
+   ========================================================= */
+/* =========================================================
+   LIGHT ENGINEERING MODE
+   ========================================================= */
+
+/* ---------- FOUNDATION ---------- */
+
+body.theme-light.engineering-foundation {
+
+  --eng-background: #f4f5f3;
+  --eng-background-secondary: #e9ebe8;
+
+  --eng-editor: #f7f8f6;
+  --eng-panel: #eef0ed;
+  --eng-panel-raised: #e4e7e3;
+
+  --eng-border: #c4cac5;
+  --eng-border-strong: #9da69f;
+
+  --eng-primary: #356b7d;
+  --eng-secondary: #5d8796;
+
+  --eng-text: #202729;
+  --eng-text-bright: #101719;
+  --eng-text-muted: #626d70;
+  --eng-text-faint: #7d8789;
+
+  --eng-glow: rgba(53,107,125,0.13);
+}
+
+
+/* ---------- CIRCUIT ---------- */
+
+body.theme-light.engineering-circuit {
+
+  --eng-background: #eef2f3;
+  --eng-background-secondary: #e3e9eb;
+
+  --eng-editor: #f5f8f9;
+  --eng-panel: #e8eff0;
+  --eng-panel-raised: #dce7e8;
+
+  --eng-border: #b7c9cb;
+  --eng-border-strong: #8faeb1;
+
+  --eng-primary: #167a6b;
+  --eng-secondary: #2e9b8a;
+
+  --eng-text: #182827;
+  --eng-text-bright: #0d1918;
+  --eng-text-muted: #5e706d;
+  --eng-text-faint: #7b8986;
+
+  --eng-glow: rgba(22,122,107,0.13);
+}
+
+
+/* ---------- CATALYST ---------- */
+
+body.theme-light.engineering-catalyst {
+
+  --eng-background: #f5f1eb;
+  --eng-background-secondary: #ebe4da;
+
+  --eng-editor: #faf8f4;
+  --eng-panel: #f0ebe4;
+  --eng-panel-raised: #e6ded3;
+
+  --eng-border: #cfc3b4;
+  --eng-border-strong: #a99b89;
+
+  --eng-primary: #9a6533;
+  --eng-secondary: #b17d49;
+
+  --eng-text: #29231e;
+  --eng-text-bright: #17120f;
+  --eng-text-muted: #74695e;
+  --eng-text-faint: #91867a;
+
+  --eng-glow: rgba(154,101,51,0.13);
+}
+
+
+/* ---------- MACHINA ---------- */
+
+body.theme-light.engineering-machina {
+
+  --eng-background: #e9e9e7;
+  --eng-background-secondary: #ddddda;
+
+  --eng-editor: #f4f4f1;
+  --eng-panel: #e5e5e1;
+  --eng-panel-raised: #d9d9d4;
+
+  --eng-border: #b7b7b1;
+  --eng-border-strong: #92928b;
+
+  --eng-primary: #454d50;
+  --eng-secondary: #7a5b42;
+
+  --eng-text: #202323;
+  --eng-text-bright: #0f1212;
+  --eng-text-muted: #626663;
+  --eng-text-faint: #7b7f7c;
+
+  --eng-glow: rgba(69,77,80,0.13);
+}
+
+
+/* ---------- KINEMATICS ---------- */
+
+body.theme-light.engineering-kinematics {
+
+  --eng-background: #edf2f5;
+  --eng-background-secondary: #e1e9ee;
+
+  --eng-editor: #f7f9fa;
+  --eng-panel: #e9eff3;
+  --eng-panel-raised: #dfe8ee;
+
+  --eng-border: #b9c7d0;
+  --eng-border-strong: #91a5b2;
+
+  --eng-primary: #27647b;
+  --eng-secondary: #5d7480;
+
+  --eng-text: #1d272c;
+  --eng-text-bright: #10181c;
+  --eng-text-muted: #637078;
+  --eng-text-faint: #7b878d;
+
+  --eng-glow: rgba(39,100,123,0.13);
+}
+
+
+/* ---------- MISSION CONTROL ---------- */
+
+body.theme-light.engineering-mission-control {
+
+  --eng-background: #e9eef1;
+  --eng-background-secondary: #dce4e8;
+
+  --eng-editor: #f4f7f8;
+  --eng-panel: #e5ebee;
+  --eng-panel-raised: #d9e2e6;
+
+  --eng-border: #b5c2c8;
+  --eng-border-strong: #8e9fa7;
+
+  --eng-primary: #315d70;
+  --eng-secondary: #687b83;
+
+  --eng-text: #1c2529;
+  --eng-text-bright: #0e1518;
+  --eng-text-muted: #606f75;
+  --eng-text-faint: #7b878c;
+
+  --eng-glow: rgba(49,93,112,0.13);
+}
+
+
+/* ---------- KERNEL ---------- */
+
+body.theme-light.engineering-kernel {
+
+  --eng-background: #f0f0ee;
+  --eng-background-secondary: #e5e5e2;
+
+  --eng-editor: #f8f8f6;
+  --eng-panel: #ededeb;
+  --eng-panel-raised: #e3e3e0;
+
+  --eng-border: #c3c3be;
+  --eng-border-strong: #999994;
+
+  --eng-primary: #394c56;
+  --eng-secondary: #59686f;
+
+  --eng-text: #202526;
+  --eng-text-bright: #0d1112;
+  --eng-text-muted: #646b6d;
+  --eng-text-faint: #7c8284;
+
+  --eng-glow: rgba(57,76,86,0.12);
+}
