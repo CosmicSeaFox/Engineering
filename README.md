@@ -18,8 +18,11 @@ It is not simply a colour theme.
 ## Preview
 
 <p align="center">
-  <img src="screenshots/dark.png" alt="Engineering Obsidian Theme — Dark Mode" width="49%">
-  <img src="screenshots/light.png" alt="Engineering Obsidian Theme — Light Mode" width="49%">
+  <img src="screenshots/dark.png" alt="Engineering Obsidian Theme — Dark Mode" width="80%">
+</p>
+
+<p align="center">
+  <img src="screenshots/light.png" alt="Engineering Obsidian Theme — Light Mode" width="80%">
 </p>
 
 > **Structure before decoration.**
