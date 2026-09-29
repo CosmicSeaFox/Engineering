@@ -69,7 +69,7 @@ Switch disciplines through **Style Settings** and transform the atmosphere of yo
 | **Graph Atmosphere** | Blueprint, PCB, laboratory, CAD, telemetry & terminal environments |
 | **Better Light Mode** | Designed as technical documentation rather than inverted dark mode |
 | **Responsive Properties** | Long technical fields remain readable |
-| **Cleaner Tables** | No zebra striping, distracting hover effects, or unnecessary `!important` |
+| **Cleaner Tables** | No zebra striping, distracting hover effects |
 | **Accessibility** | Contrast, reduced motion, focus states, and non-color indicators |
 | **Mobile** | Responsive properties, tables, spacing, and touch targets |
 | **Print / PDF** | Cleaner technical documents when exported |
