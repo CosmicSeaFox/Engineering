@@ -38,7 +38,7 @@ A clean technical-document style designed for daylight and documentation workflo
 A closer look at the Engineering theme in everyday use.
 
 <p align="center">
-  <img src="screenshots/screenshot.png" alt="Engineering Obsidian Theme — Workspace" width="82%">
+  <img src="screenshot.png" alt="Engineering Obsidian Theme — Workspace" width="82%">
 </p>
 
 > **Two modes. One engineering system.**
