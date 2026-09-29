@@ -17,6 +17,14 @@ It is not simply a colour theme.
 
 ## Preview
 
+### Engineering Workspace
+
+A closer look at the Engineering theme in everyday use.
+
+<p align="center">
+  <img src="screenshot.png" alt="Engineering Obsidian Theme — Workspace" width="82%">
+</p>
+
 ### Dark Mode
 
 Technical, focused, and optimized for long engineering sessions.
@@ -31,14 +39,6 @@ A clean technical-document style designed for daylight and documentation workflo
 
 <p align="center">
   <img src="screenshots/light.png" alt="Engineering Obsidian Theme — Light Mode" width="82%">
-</p>
-
-### Engineering Workspace
-
-A closer look at the Engineering theme in everyday use.
-
-<p align="center">
-  <img src="screenshot.png" alt="Engineering Obsidian Theme — Workspace" width="82%">
 </p>
 
 > **Two modes. One engineering system.**
